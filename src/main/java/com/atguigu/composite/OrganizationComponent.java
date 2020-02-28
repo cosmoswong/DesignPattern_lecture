@@ -2,20 +2,20 @@ package com.atguigu.composite;
 
 public abstract class OrganizationComponent {
 
-	private String name; // Ãû×Ö
-	private String des; // ËµÃ÷
+	private String name; // åå­—
+	private String des; // è¯´æ˜
 	
 	protected  void add(OrganizationComponent organizationComponent) {
-		//Ä¬ÈÏÊµÏÖ
+		//é»˜è®¤å®ç°
 		throw new UnsupportedOperationException();
 	}
 	
 	protected  void remove(OrganizationComponent organizationComponent) {
-		//Ä¬ÈÏÊµÏÖ
+		//é»˜è®¤å®ç°
 		throw new UnsupportedOperationException();
 	}
 
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public OrganizationComponent(String name, String des) {
 		super();
 		this.name = name;
@@ -38,7 +38,7 @@ public abstract class OrganizationComponent {
 		this.des = des;
 	}
 	
-	//·½·¨print, ×ö³É³éÏóµÄ, ×ÓÀà¶¼ĞèÒªÊµÏÖ
+	//æ–¹æ³•print, åšæˆæŠ½è±¡çš„, å­ç±»éƒ½éœ€è¦å®ç°
 	protected abstract void print();
 	
 	

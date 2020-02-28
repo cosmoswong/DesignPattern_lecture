@@ -2,6 +2,6 @@ package com.atguigu.visitor;
 
 public abstract class Person {
 	
-	//Ìá¹©Ò»¸ö·½·¨£¬ÈÃ·ÃÎÊÕß¿ÉÒÔ·ÃÎÊ
+	//æä¾›ä¸€ä¸ªæ–¹æ³•ï¼Œè®©è®¿é—®è€…å¯ä»¥è®¿é—®
 	public abstract void accept(Action action);
 }

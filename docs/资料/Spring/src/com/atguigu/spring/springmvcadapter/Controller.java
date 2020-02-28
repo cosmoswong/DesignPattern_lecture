@@ -1,6 +1,6 @@
 package com.atguigu.spring.springmvcadapter;
 
-//多种Controller实现  
+//澶氱Controller瀹炵幇  
 public interface Controller {
 
 }

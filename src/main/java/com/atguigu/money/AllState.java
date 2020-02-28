@@ -1,6 +1,6 @@
 package com.atguigu.money;
 
-//各种具体状态类
+//鍚勭鍏蜂綋鐘舵�佺被
 class FeedBackState extends AbstractState {
 
 	@Override

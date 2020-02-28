@@ -3,7 +3,7 @@ package com.atguigu.principle.ocp;
 public class Ocp {
 
 	public static void main(String[] args) {
-		//Ê¹ÓÃ¿´¿´´æÔÚµÄÎÊÌâ
+		//ä½¿ç”¨çœ‹çœ‹å­˜åœ¨çš„é—®é¢˜
 		GraphicEditor graphicEditor = new GraphicEditor();
 		graphicEditor.drawShape(new Rectangle());
 		graphicEditor.drawShape(new Circle());
@@ -12,9 +12,9 @@ public class Ocp {
 
 }
 
-//ÕâÊÇÒ»¸öÓÃÓÚ»æÍ¼µÄÀà [Ê¹ÓÃ·½]
+//è¿™æ˜¯ä¸€ä¸ªç”¨äºç»˜å›¾çš„ç±» [ä½¿ç”¨æ–¹]
 class GraphicEditor {
-	//½ÓÊÕShape¶ÔÏó£¬È»ºó¸ù¾İtype£¬À´»æÖÆ²»Í¬µÄÍ¼ĞÎ
+	//æ¥æ”¶Shapeå¯¹è±¡ï¼Œç„¶åæ ¹æ®typeï¼Œæ¥ç»˜åˆ¶ä¸åŒçš„å›¾å½¢
 	public void drawShape(Shape s) {
 		if (s.m_type == 1)
 			drawRectangle(s);
@@ -24,23 +24,23 @@ class GraphicEditor {
 			drawTriangle(s);
 	}
 
-	//»æÖÆ¾ØĞÎ
+	//ç»˜åˆ¶çŸ©å½¢
 	public void drawRectangle(Shape r) {
-		System.out.println(" »æÖÆ¾ØĞÎ ");
+		System.out.println(" ç»˜åˆ¶çŸ©å½¢ ");
 	}
 
-	//»æÖÆÔ²ĞÎ
+	//ç»˜åˆ¶åœ†å½¢
 	public void drawCircle(Shape r) {
-		System.out.println(" »æÖÆÔ²ĞÎ ");
+		System.out.println(" ç»˜åˆ¶åœ†å½¢ ");
 	}
 	
-	//»æÖÆÈı½ÇĞÎ
+	//ç»˜åˆ¶ä¸‰è§’å½¢
 	public void drawTriangle(Shape r) {
-		System.out.println(" »æÖÆÈı½ÇĞÎ ");
+		System.out.println(" ç»˜åˆ¶ä¸‰è§’å½¢ ");
 	}
 }
 
-//ShapeÀà£¬»ùÀà
+//Shapeç±»ï¼ŒåŸºç±»
 class Shape {
 	int m_type;
 }
@@ -57,7 +57,7 @@ class Circle extends Shape {
 	}
 }
 
-//ĞÂÔö»­Èı½ÇĞÎ
+//æ–°å¢ç”»ä¸‰è§’å½¢
 class Triangle extends Shape {
 	Triangle() {
 		super.m_type = 3;

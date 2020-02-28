@@ -340,9 +340,9 @@ public class StringRegressionTest extends BaseTestCase {
     // broken :(
     /*
      * public void testSingleByteConversion() throws Exception {
-     * testConversionForString("latin1", "��� ����");
-     * testConversionForString("latin1", "Kaarle ��nis Ilmari");
-     * testConversionForString("latin1", "������������������"); }
+     * testConversionForString("latin1", "锟斤拷锟� 锟斤拷锟斤拷");
+     * testConversionForString("latin1", "Kaarle 锟斤拷nis Ilmari");
+     * testConversionForString("latin1", "锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷"); }
      */
 
     /**
@@ -453,8 +453,8 @@ public class StringRegressionTest extends BaseTestCase {
     }
 
     public void testUtf8Encoding2() throws Exception {
-        String field1 = "K��sel";
-        String field2 = "B�b";
+        String field1 = "K锟斤拷sel";
+        String field2 = "B锟絙";
         byte[] field1AsBytes = field1.getBytes("utf-8");
         byte[] field2AsBytes = field2.getBytes("utf-8");
 

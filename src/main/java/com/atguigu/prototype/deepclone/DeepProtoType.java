@@ -8,21 +8,21 @@ import java.io.Serializable;
 
 public class DeepProtoType implements Serializable, Cloneable{
 	
-	public String name; //String ÊôĞÔ
-	public DeepCloneableTarget deepCloneableTarget;// ÒıÓÃÀàĞÍ
+	public String name; //String çç‚´ï¿½ï¿½
+	public DeepCloneableTarget deepCloneableTarget;// å¯®æ› æ•¤ç»«è¯²ç€·
 	public DeepProtoType() {
 		super();
 	}
 	
 	
-	//Éî¿½±´ - ·½Ê½ 1 Ê¹ÓÃclone ·½·¨
+	//å¨£è¾¨å«¹ç’ï¿½ - é‚ç‘°ç´¡ 1 æµ£è·¨æ•¤clone é‚è§„ç¡¶
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		
 		Object deep = null;
-		//ÕâÀïÍê³É¶Ô»ù±¾Êı¾İÀàĞÍ(ÊôĞÔ)ºÍStringµÄ¿ËÂ¡
+		//æ©æ¬“å™·ç€¹å±¾åšç€µç‘°ç†€éˆî„æšŸé¹î†¾è¢«é¨ï¿½(çç‚´ï¿½ï¿½)éœå­²tringé¨å‹«å é—…ï¿½
 		deep = super.clone(); 
-		//¶ÔÒıÓÃÀàĞÍµÄÊôĞÔ£¬½øĞĞµ¥¶À´¦Àí
+		//ç€µç‘°ç´©é¢ã„§è¢«é¨å¬¬æ®‘çç‚´ï¿½Ñç´æ©æ¶œî”‘é—æ› å«­æ¾¶å‹­æ‚Š
 		DeepProtoType deepProtoType = (DeepProtoType)deep;
 		deepProtoType.deepCloneableTarget  = (DeepCloneableTarget)deepCloneableTarget.clone();
 		
@@ -30,11 +30,11 @@ public class DeepProtoType implements Serializable, Cloneable{
 		return deepProtoType;
 	}
 	
-	//Éî¿½±´ - ·½Ê½2 Í¨¹ı¶ÔÏóµÄĞòÁĞ»¯ÊµÏÖ (ÍÆ¼ö)
+	//å¨£è¾¨å«¹ç’ï¿½ - é‚ç‘°ç´¡2 é–«æ°³ç¹ƒç€µç¡…è–„é¨å‹«ç°­é’æ¥€å¯²ç€¹ç‚µå¹‡ (éºã„¨å´˜)
 	
 	public Object deepClone() {
 		
-		//´´½¨Á÷¶ÔÏó
+		//é’æ¶˜ç¼“å¨´ä½¸î‡®ç’ï¿½
 		ByteArrayOutputStream bos = null;
 		ObjectOutputStream oos = null;
 		ByteArrayInputStream bis = null;
@@ -42,12 +42,12 @@ public class DeepProtoType implements Serializable, Cloneable{
 		
 		try {
 			
-			//ĞòÁĞ»¯
+			//æ´å¿“åªé–ï¿½
 			bos = new ByteArrayOutputStream();
 			oos = new ObjectOutputStream(bos);
-			oos.writeObject(this); //µ±Ç°Õâ¸ö¶ÔÏóÒÔ¶ÔÏóÁ÷µÄ·½Ê½Êä³ö
+			oos.writeObject(this); //è¤°æ’³å¢ æ©æ¬é‡œç€µç¡…è–„æµ ãƒ¥î‡®ç’â„ƒç¥¦é¨å‹¬æŸŸå¯®å¿šç·­é‘ï¿½
 			
-			//·´ĞòÁĞ»¯
+			//é™å¶…ç°­é’æ¥€å¯²
 			bis = new ByteArrayInputStream(bos.toByteArray());
 			ois = new ObjectInputStream(bis);
 			DeepProtoType copyObj = (DeepProtoType)ois.readObject();
@@ -59,7 +59,7 @@ public class DeepProtoType implements Serializable, Cloneable{
 			e.printStackTrace();
 			return null;
 		} finally {
-			//¹Ø±ÕÁ÷
+			//éæŠ½æ£´å¨´ï¿½
 			try {
 				bos.close();
 				oos.close();

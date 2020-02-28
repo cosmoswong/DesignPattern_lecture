@@ -4,17 +4,17 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öÇëÇó
+		//åˆ›å»ºä¸€ä¸ªè¯·æ±‚
 		PurchaseRequest purchaseRequest = new PurchaseRequest(1, 31000, 1);
 		
-		//´´½¨Ïà¹ØµÄÉóÅúÈË
-		DepartmentApprover departmentApprover = new DepartmentApprover("ÕÅÖ÷ÈÎ");
-		CollegeApprover collegeApprover = new CollegeApprover("ÀîÔº³¤");
-		ViceSchoolMasterApprover viceSchoolMasterApprover = new ViceSchoolMasterApprover("Íõ¸±Ğ£");
-		SchoolMasterApprover schoolMasterApprover = new SchoolMasterApprover("Ù¡Ğ£³¤");
+		//åˆ›å»ºç›¸å…³çš„å®¡æ‰¹äºº
+		DepartmentApprover departmentApprover = new DepartmentApprover("å¼ ä¸»ä»»");
+		CollegeApprover collegeApprover = new CollegeApprover("æé™¢é•¿");
+		ViceSchoolMasterApprover viceSchoolMasterApprover = new ViceSchoolMasterApprover("ç‹å‰¯æ ¡");
+		SchoolMasterApprover schoolMasterApprover = new SchoolMasterApprover("ä½Ÿæ ¡é•¿");
 	
 	
-		//ĞèÒª½«¸÷¸öÉóÅú¼¶±ğµÄÏÂÒ»¸öÉèÖÃºÃ (´¦ÀíÈË¹¹³É»·ĞÎ: )
+		//éœ€è¦å°†å„ä¸ªå®¡æ‰¹çº§åˆ«çš„ä¸‹ä¸€ä¸ªè®¾ç½®å¥½ (å¤„ç†äººæ„æˆç¯å½¢: )
 		departmentApprover.setApprover(collegeApprover);
 		collegeApprover.setApprover(viceSchoolMasterApprover);
 		viceSchoolMasterApprover.setApprover(schoolMasterApprover);

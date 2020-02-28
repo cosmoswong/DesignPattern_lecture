@@ -2,9 +2,9 @@ package com.atguigu.mediator.smarthouse;
 
 import java.util.HashMap;
 
-//¾ßÌåµÄÖĞ½éÕßÀà
+//å…·ä½“çš„ä¸­ä»‹è€…ç±»
 public class ConcreteMediator extends Mediator {
-	//¼¯ºÏ£¬·ÅÈëËùÓĞµÄÍ¬ÊÂ¶ÔÏó
+	//é›†åˆï¼Œæ”¾å…¥æ‰€æœ‰çš„åŒäº‹å¯¹è±¡
 	private HashMap<String, Colleague> colleagueMap;
 	private HashMap<String, String> interMap;
 
@@ -32,14 +32,14 @@ public class ConcreteMediator extends Mediator {
 
 	}
 
-	//¾ßÌåÖĞ½éÕßµÄºËĞÄ·½·¨
-	//1. ¸ù¾İµÃµ½ÏûÏ¢£¬Íê³É¶ÔÓ¦ÈÎÎñ
-	//2. ÖĞ½éÕßÔÚÕâ¸ö·½·¨£¬Ğ­µ÷¸÷¸ö¾ßÌåµÄÍ¬ÊÂ¶ÔÏó£¬Íê³ÉÈÎÎñ
+	//å…·ä½“ä¸­ä»‹è€…çš„æ ¸å¿ƒæ–¹æ³•
+	//1. æ ¹æ®å¾—åˆ°æ¶ˆæ¯ï¼Œå®Œæˆå¯¹åº”ä»»åŠ¡
+	//2. ä¸­ä»‹è€…åœ¨è¿™ä¸ªæ–¹æ³•ï¼Œåè°ƒå„ä¸ªå…·ä½“çš„åŒäº‹å¯¹è±¡ï¼Œå®Œæˆä»»åŠ¡
 	@Override
 	public void GetMessage(int stateChange, String colleagueName) {
 		// TODO Auto-generated method stub
 
-		//´¦ÀíÄÖÖÓ·¢³öµÄÏûÏ¢
+		//å¤„ç†é—¹é’Ÿå‘å‡ºçš„æ¶ˆæ¯
 		if (colleagueMap.get(colleagueName) instanceof Alarm) {
 			if (stateChange == 0) {
 				((CoffeeMachine) (colleagueMap.get(interMap
@@ -53,10 +53,10 @@ public class ConcreteMediator extends Mediator {
 			((Curtains) (colleagueMap.get(interMap.get("Curtains"))))
 					.UpCurtains();
 
-		} else if (colleagueMap.get(colleagueName) instanceof TV) {//Èç¹ûTV·¢ÏÖÏûÏ¢
+		} else if (colleagueMap.get(colleagueName) instanceof TV) {//å¦‚æœTVå‘ç°æ¶ˆæ¯
 
 		} else if (colleagueMap.get(colleagueName) instanceof Curtains) {
-			//Èç¹ûÊÇÒÔ´°Á±·¢³öµÄÏûÏ¢£¬ÕâÀï´¦Àí...
+			//å¦‚æœæ˜¯ä»¥çª—å¸˜å‘å‡ºçš„æ¶ˆæ¯ï¼Œè¿™é‡Œå¤„ç†...
 		}
 
 	}

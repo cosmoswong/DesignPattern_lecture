@@ -1,13 +1,13 @@
 package com.atguigu.responsibilitychain;
 
 
-//ÇëÇóÀà
+//è¯·æ±‚ç±»
 public class PurchaseRequest {
 
-	private int type = 0; //ÇëÇóÀàĞÍ
-	private float price = 0.0f; //ÇëÇó½ğ¶î
+	private int type = 0; //è¯·æ±‚ç±»å‹
+	private float price = 0.0f; //è¯·æ±‚é‡‘é¢
 	private int id = 0;
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public PurchaseRequest(int type, float price, int id) {
 		this.type = type;
 		this.price = price;

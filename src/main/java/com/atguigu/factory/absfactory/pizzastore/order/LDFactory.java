@@ -10,7 +10,7 @@ public class LDFactory implements AbsFactory {
 
 	@Override
 	public Pizza createPizza(String orderType) {
-		System.out.println("~使用的是抽象工厂模式~");
+		System.out.println("~浣跨敤鐨勬槸鎶借薄宸ュ巶妯″紡~");
 		Pizza pizza = null;
 		if (orderType.equals("cheese")) {
 			pizza = new LDCheesePizza();

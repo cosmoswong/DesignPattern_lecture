@@ -6,15 +6,15 @@ import java.util.List;
 public class InfoColleageIterator implements Iterator {
 
 	
-	List<Department> departmentList; // ĞÅÏ¢¹¤³ÌÑ§ÔºÊÇÒÔList·½Ê½´æ·ÅÏµ
-	int index = -1;//Ë÷Òı
+	List<Department> departmentList; // ä¿¡æ¯å·¥ç¨‹å­¦é™¢æ˜¯ä»¥Listæ–¹å¼å­˜æ”¾ç³»
+	int index = -1;//ç´¢å¼•
 	
 
 	public InfoColleageIterator(List<Department> departmentList) {
 		this.departmentList = departmentList;
 	}
 
-	//ÅĞ¶ÏlistÖĞ»¹ÓĞÃ»ÓĞÏÂÒ»¸öÔªËØ
+	//åˆ¤æ–­listä¸­è¿˜æœ‰æ²¡æœ‰ä¸‹ä¸€ä¸ªå…ƒç´ 
 	@Override
 	public boolean hasNext() {
 		// TODO Auto-generated method stub
@@ -32,7 +32,7 @@ public class InfoColleageIterator implements Iterator {
 		return departmentList.get(index);
 	}
 	
-	//¿ÕÊµÏÖremove
+	//ç©ºå®ç°remove
 	public void remove() {
 		
 	}

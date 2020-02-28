@@ -51,7 +51,7 @@ import com.mysql.jdbc.jdbc2.optional.MysqlXADataSource;
  * "Each call to PooledConnection.getConnection() must return a newly constructed Connection object that exhibits the default Connection behavior. Only the most
  * recent Connection object produced from a particular PooledConnection is open. An existing Connection object is automatically closed, if the getConnection()
  * method of its associated Pooled-Connection is called again, before it has been explicitly closed by the application. This gives the application server a way
- * to �take away� a Connection from the application if it wishes, and give it out to someone else. This capability will not likely be used frequently in
+ * to 锟絫ake away锟� a Connection from the application if it wishes, and give it out to someone else. This capability will not likely be used frequently in
  * practice."
  * </p>
  * 

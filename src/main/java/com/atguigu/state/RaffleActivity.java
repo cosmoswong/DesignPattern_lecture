@@ -1,43 +1,43 @@
 package com.atguigu.state;
 
 /**
- * ³é½±»î¶¯ //
+ * æŠ½å¥–æ´»åŠ¨ //
  * 
  * @author Administrator
  *
  */
 public class RaffleActivity {
 
-	// state ±íÊ¾»î¶¯µ±Ç°µÄ×´Ì¬£¬ÊÇ±ä»¯
+	// state è¡¨ç¤ºæ´»åŠ¨å½“å‰çš„çŠ¶æ€ï¼Œæ˜¯å˜åŒ–
     State state = null;
-    // ½±Æ·ÊıÁ¿
+    // å¥–å“æ•°é‡
     int count = 0;
     
-    // ËÄ¸öÊôĞÔ£¬±íÊ¾ËÄÖÖ×´Ì¬
+    // å››ä¸ªå±æ€§ï¼Œè¡¨ç¤ºå››ç§çŠ¶æ€
     State noRafflleState = new NoRaffleState(this);
     State canRaffleState = new CanRaffleState(this);
     
     State dispenseState =   new DispenseState(this);
     State dispensOutState = new DispenseOutState(this);
 
-    //¹¹ÔìÆ÷
-    //1. ³õÊ¼»¯µ±Ç°µÄ×´Ì¬Îª noRafflleState£¨¼´²»ÄÜ³é½±µÄ×´Ì¬£©
-    //2. ³õÊ¼»¯½±Æ·µÄÊıÁ¿ 
+    //æ„é€ å™¨
+    //1. åˆå§‹åŒ–å½“å‰çš„çŠ¶æ€ä¸º noRafflleStateï¼ˆå³ä¸èƒ½æŠ½å¥–çš„çŠ¶æ€ï¼‰
+    //2. åˆå§‹åŒ–å¥–å“çš„æ•°é‡ 
     public RaffleActivity( int count) {
         this.state = getNoRafflleState();
         this.count = count;
     }
 
-    //¿Û·Ö, µ÷ÓÃµ±Ç°×´Ì¬µÄ deductMoney
+    //æ‰£åˆ†, è°ƒç”¨å½“å‰çŠ¶æ€çš„ deductMoney
     public void debuctMoney(){
         state.deductMoney();
     }
 
-    //³é½± 
+    //æŠ½å¥– 
     public void raffle(){
-    	// Èç¹ûµ±Ç°µÄ×´Ì¬ÊÇ³é½±³É¹¦
+    	// å¦‚æœå½“å‰çš„çŠ¶æ€æ˜¯æŠ½å¥–æˆåŠŸ
         if(state.raffle()){
-        	//ÁìÈ¡½±Æ·
+        	//é¢†å–å¥–å“
             state.dispensePrize();
         }
 
@@ -51,7 +51,7 @@ public class RaffleActivity {
         this.state = state;
     }
 
-    //ÕâÀïÇë´ó¼Ò×¢Òâ£¬Ã¿ÁìÈ¡Ò»´Î½±Æ·£¬count--
+    //è¿™é‡Œè¯·å¤§å®¶æ³¨æ„ï¼Œæ¯é¢†å–ä¸€æ¬¡å¥–å“ï¼Œcount--
     public int getCount() {
     	int curCount = count; 
     	count--;

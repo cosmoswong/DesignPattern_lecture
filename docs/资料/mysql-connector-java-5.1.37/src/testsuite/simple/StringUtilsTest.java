@@ -586,9 +586,9 @@ public class StringUtilsTest extends BaseTestCase {
     public void testGetBytes() throws Exception {
         final int offset = 8;
         final int length = 13;
-        final String text = "MySQL ≈ 𝄞 for my ears";
+        final String text = "MySQL 鈮� 饾劄 for my ears";
         final String textPart = text.substring(offset, offset + length);
-        final String textWrapped = "`MySQL ≈ 𝄞 for my ears`";
+        final String textWrapped = "`MySQL 鈮� 饾劄 for my ears`";
         final char[] textAsCharArray = text.toCharArray();
 
         byte[] asBytesFromString;

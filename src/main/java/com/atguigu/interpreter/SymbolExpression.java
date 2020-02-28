@@ -3,8 +3,8 @@ package com.atguigu.interpreter;
 import java.util.HashMap;
 
 /**
- * ³éÏóÔËËã·ûºÅ½âÎöÆ÷ ÕâÀï£¬Ã¿¸öÔËËã·ûºÅ£¬¶¼Ö»ºÍ×Ô¼º×óÓÒÁ½¸öÊı×ÖÓĞ¹ØÏµ£¬
- * µ«×óÓÒÁ½¸öÊı×ÖÓĞ¿ÉÄÜÒ²ÊÇÒ»¸ö½âÎöµÄ½á¹û£¬ÎŞÂÛºÎÖÖÀàĞÍ£¬¶¼ÊÇExpressionÀàµÄÊµÏÖÀà
+ * æŠ½è±¡è¿ç®—ç¬¦å·è§£æå™¨ è¿™é‡Œï¼Œæ¯ä¸ªè¿ç®—ç¬¦å·ï¼Œéƒ½åªå’Œè‡ªå·±å·¦å³ä¸¤ä¸ªæ•°å­—æœ‰å…³ç³»ï¼Œ
+ * ä½†å·¦å³ä¸¤ä¸ªæ•°å­—æœ‰å¯èƒ½ä¹Ÿæ˜¯ä¸€ä¸ªè§£æçš„ç»“æœï¼Œæ— è®ºä½•ç§ç±»å‹ï¼Œéƒ½æ˜¯Expressionç±»çš„å®ç°ç±»
  * 
  * @author Administrator
  *
@@ -19,7 +19,7 @@ public class SymbolExpression extends Expression {
 		this.right = right;
 	}
 
-	//ÒòÎª SymbolExpression ÊÇÈÃÆä×ÓÀàÀ´ÊµÏÖ£¬Òò´Ë interpreter ÊÇÒ»¸öÄ¬ÈÏÊµÏÖ
+	//å› ä¸º SymbolExpression æ˜¯è®©å…¶å­ç±»æ¥å®ç°ï¼Œå› æ­¤ interpreter æ˜¯ä¸€ä¸ªé»˜è®¤å®ç°
 	@Override
 	public int interpreter(HashMap<String, Integer> var) {
 		// TODO Auto-generated method stub

@@ -4,7 +4,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		
-		//��ȡ�۵�ʽ�ֻ� (��ʽ + Ʒ�� )
+		//获取折叠式手机 (样式 + 品牌 )
 		
 		Phone phone1 = new FoldedPhone(new XiaoMi());
 		

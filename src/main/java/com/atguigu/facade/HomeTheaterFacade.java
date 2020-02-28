@@ -2,7 +2,7 @@ package com.atguigu.facade;
 
 public class HomeTheaterFacade {
 	
-	//¶¨Òå¸÷¸ö×ÓÏµÍ³¶ÔÏó
+	//å®šä¹‰å„ä¸ªå­ç³»ç»Ÿå¯¹è±¡
 	private TheaterLight theaterLight;
 	private Popcorn popcorn;
 	private Stereo stereo;
@@ -11,7 +11,7 @@ public class HomeTheaterFacade {
 	private DVDPlayer dVDPlayer;
 	
 	
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public HomeTheaterFacade() {
 		super();
 		this.theaterLight = TheaterLight.getInstance();
@@ -22,7 +22,7 @@ public class HomeTheaterFacade {
 		this.dVDPlayer = DVDPlayer.getInstanc();
 	}
 
-	//²Ù×÷·Ö³É 4 ²½
+	//æ“ä½œåˆ†æˆ 4 æ­¥
 	
 	public void ready() {
 		popcorn.on();

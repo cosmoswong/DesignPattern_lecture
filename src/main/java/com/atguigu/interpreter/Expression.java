@@ -3,14 +3,14 @@ package com.atguigu.interpreter;
 import java.util.HashMap;
 
 /**
- * ³éÏóÀà±í´ïÊ½£¬Í¨¹ıHashMap ¼üÖµ¶Ô, ¿ÉÒÔ»ñÈ¡µ½±äÁ¿µÄÖµ
+ * æŠ½è±¡ç±»è¡¨è¾¾å¼ï¼Œé€šè¿‡HashMap é”®å€¼å¯¹, å¯ä»¥è·å–åˆ°å˜é‡çš„å€¼
  * 
  * @author Administrator
  *
  */
 public abstract class Expression {
 	// a + b - c
-	// ½âÊÍ¹«Ê½ºÍÊıÖµ, key ¾ÍÊÇ¹«Ê½(±í´ïÊ½) ²ÎÊı[a,b,c], value¾ÍÊÇ¾ÍÊÇ¾ßÌåÖµ
+	// è§£é‡Šå…¬å¼å’Œæ•°å€¼, key å°±æ˜¯å…¬å¼(è¡¨è¾¾å¼) å‚æ•°[a,b,c], valueå°±æ˜¯å°±æ˜¯å…·ä½“å€¼
 	// HashMap {a=10, b=20}
 	public abstract int interpreter(HashMap<String, Integer> var);
 }

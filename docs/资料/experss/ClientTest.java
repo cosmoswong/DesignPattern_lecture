@@ -12,23 +12,23 @@ public class ClientTest {
 		String expStr = getExpStr(); 
 		HashMap<String, Integer> var = getValue(expStr);
 		Calculator calculator = new Calculator(expStr);
-		System.out.println("ÔËËã½á¹û£º" + expStr + "=" + calculator.run(var));
+		System.out.println("è¿ç®—ç»“æœï¼š" + expStr + "=" + calculator.run(var));
 	}
 
-	// »ñµÃ±í´ïÊ½
+	// è·å¾—è¡¨è¾¾å¼
 	public static String getExpStr() throws IOException {
-		System.out.print("ÇëÊäÈë±í´ïÊ½£º");
+		System.out.print("è¯·è¾“å…¥è¡¨è¾¾å¼ï¼š");
 		return (new BufferedReader(new InputStreamReader(System.in))).readLine();
 	}
 
-	// »ñµÃÖµÓ³Éä
+	// è·å¾—å€¼æ˜ å°„
 	public static HashMap<String, Integer> getValue(String expStr) throws IOException {
 		HashMap<String, Integer> map = new HashMap<>();
 
 		for (char ch : expStr.toCharArray()) {
 			if (ch != '+' && ch != '-') {
 				if (!map.containsKey(String.valueOf(ch))) {
-					System.out.print("ÇëÊäÈë" + String.valueOf(ch) + "µÄÖµ£º");
+					System.out.print("è¯·è¾“å…¥" + String.valueOf(ch) + "çš„å€¼ï¼š");
 					String in = (new BufferedReader(new InputStreamReader(System.in))).readLine();
 					map.put(String.valueOf(ch), Integer.valueOf(in));
 				}

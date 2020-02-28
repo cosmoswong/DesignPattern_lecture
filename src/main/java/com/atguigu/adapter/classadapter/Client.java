@@ -4,7 +4,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(" === ÀàÊÊÅäÆ÷Ä£Ê½ ====");
+		System.out.println(" === ç»«å©šï¿½å‚å¤é£ã„¦Äå¯®ï¿½ ====");
 		Phone phone = new Phone();
 		phone.charging(new VoltageAdapter());
 	}

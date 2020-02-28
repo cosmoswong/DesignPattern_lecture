@@ -3631,7 +3631,7 @@ public class ResultSetRegressionTest extends BaseTestCase {
         createTable("testBug30664_2", "(id int, binaryvalue varbinary(255))");
 
         this.stmt.executeUpdate("insert into testBug30664_1 values (1),(2),(3)");
-        this.stmt.executeUpdate("insert into testBug30664_2 values (1,'���'),(2,'����'),(3,' ���')");
+        this.stmt.executeUpdate("insert into testBug30664_2 values (1,'锟斤拷锟�'),(2,'锟斤拷锟斤拷'),(3,' 锟斤拷锟�')");
         this.rs = this.stmt.executeQuery("select testBug30664_1.id, (select testBug30664_2.binaryvalue from testBug30664_2 "
                 + "where testBug30664_2.id=testBug30664_1.id) as value from testBug30664_1");
         ResultSetMetaData tblMD = this.rs.getMetaData();

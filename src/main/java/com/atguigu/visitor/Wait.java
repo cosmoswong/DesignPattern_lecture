@@ -5,13 +5,13 @@ public class Wait extends Action {
 	@Override
 	public void getManResult(Man man) {
 		// TODO Auto-generated method stub
-		System.out.println(" 男人给的评价是该歌手待定 ..");
+		System.out.println(" 鐢蜂汉缁欑殑璇勪环鏄姝屾墜寰呭畾 ..");
 	}
 
 	@Override
 	public void getWomanResult(Woman woman) {
 		// TODO Auto-generated method stub
-		System.out.println(" 女人给的评价是该歌手待定 ..");
+		System.out.println(" 濂充汉缁欑殑璇勪环鏄姝屾墜寰呭畾 ..");
 	}
 
 }

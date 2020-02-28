@@ -5,13 +5,13 @@ public class Fail extends Action {
 	@Override
 	public void getManResult(Man man) {
 		// TODO Auto-generated method stub
-		System.out.println(" ÄÐÈË¸øµÄÆÀ¼Û¸Ã¸èÊÖÊ§°Ü !");
+		System.out.println(" ç”·äººç»™çš„è¯„ä»·è¯¥æ­Œæ‰‹å¤±è´¥ !");
 	}
 
 	@Override
 	public void getWomanResult(Woman woman) {
 		// TODO Auto-generated method stub
-		System.out.println(" Å®ÈË¸øµÄÆÀ¼Û¸Ã¸èÊÖÊ§°Ü !");
+		System.out.println(" å¥³äººç»™çš„è¯„ä»·è¯¥æ­Œæ‰‹å¤±è´¥ !");
 	}
 
 }

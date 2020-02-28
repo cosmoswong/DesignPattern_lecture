@@ -1,13 +1,13 @@
 package com.atguigu.flyweight;
 
-//¾ßÌåÍøÕ¾
+//å…·ä½“ç½‘ç«™
 public class ConcreteWebSite extends WebSite {
 
-	//¹²ÏíµÄ²¿·Ö£¬ÄÚ²¿×´Ì¬
-	private String type = ""; //ÍøÕ¾·¢²¼µÄĞÎÊ½(ÀàĞÍ)
+	//å…±äº«çš„éƒ¨åˆ†ï¼Œå†…éƒ¨çŠ¶æ€
+	private String type = ""; //ç½‘ç«™å‘å¸ƒçš„å½¢å¼(ç±»å‹)
 
 	
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public ConcreteWebSite(String type) {
 		
 		this.type = type;
@@ -17,7 +17,7 @@ public class ConcreteWebSite extends WebSite {
 	@Override
 	public void use(User user) {
 		// TODO Auto-generated method stub
-		System.out.println("ÍøÕ¾µÄ·¢²¼ĞÎÊ½Îª:" + type + " ÔÚÊ¹ÓÃÖĞ .. Ê¹ÓÃÕßÊÇ" + user.getName());
+		System.out.println("ç½‘ç«™çš„å‘å¸ƒå½¢å¼ä¸º:" + type + " åœ¨ä½¿ç”¨ä¸­ .. ä½¿ç”¨è€…æ˜¯" + user.getName());
 	}
 	
 	

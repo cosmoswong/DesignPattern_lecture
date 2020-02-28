@@ -1,7 +1,7 @@
 package com.atguigu.uml.dependence;
 
 public class PersonServiceBean {
-	private PersonDao personDao;// ¿‡
+	private PersonDao personDao;// Á±ª
 
 	public void save(Person person) {
 	}

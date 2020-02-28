@@ -8,7 +8,7 @@ public class Template {
 		//AbstractApplicationContext
 		//GenericApplicationContext 
 		//AbstractRefreshableApplicationContext  
-		//ClassPathXmlApplicationContext(AbstractRefreshableApplicationContext 子类)
+		//ClassPathXmlApplicationContext(AbstractRefreshableApplicationContext 瀛愮被)
 	}
 
 }

@@ -6,7 +6,7 @@ package com.atguigu.app;
  */
 public class DispenseOutState extends State {
 
-	// ��ʼ��ʱ��������
+	// 初始化时传入活动引用
     RaffleActivity activity;
 
     public DispenseOutState(RaffleActivity activity) {
@@ -14,17 +14,17 @@ public class DispenseOutState extends State {
     }
     @Override
     public void deductMoney() {
-        System.out.println("��Ʒ�������ˣ����´��ٲμ�");
+        System.out.println("奖品发送完了，请下次再参加");
     }
 
     @Override
     public boolean raffle() {
-        System.out.println("��Ʒ�������ˣ����´��ٲμ�");
+        System.out.println("奖品发送完了，请下次再参加");
         return false;
     }
 
     @Override
     public void dispensePrize() {
-        System.out.println("��Ʒ�������ˣ����´��ٲμ�");
+        System.out.println("奖品发送完了，请下次再参加");
     }
 }

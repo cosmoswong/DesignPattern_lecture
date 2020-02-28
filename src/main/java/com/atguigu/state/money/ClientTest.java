@@ -1,13 +1,13 @@
 package com.atguigu.state.money;
 
-/**²âÊÔÀà*/
+/**æµ‹è¯•ç±»*/
 public class ClientTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨context ¶ÔÏó
+		//åˆ›å»ºcontext å¯¹è±¡
 		Context context = new Context();
-        //½«µ±Ç°×´Ì¬ÉèÖÃÎª PublishState
+        //å°†å½“å‰çŠ¶æ€è®¾ç½®ä¸º PublishState
 		context.setState(new PublishState());
         System.out.println(context.getCurrentState());
         
@@ -15,10 +15,10 @@ public class ClientTest {
         context.acceptOrderEvent(context);
 //        //not pay --> paid
         context.payOrderEvent(context);
-//        // Ê§°Ü, ¼ì²âÊ§°ÜÊ±£¬»áÅ×³öÒì³£
+//        // å¤±è´¥, æ£€æµ‹å¤±è´¥æ—¶ï¼Œä¼šæŠ›å‡ºå¼‚å¸¸
 //        try {
 //        	context.checkFailEvent(context);
-//        	System.out.println("Á÷³ÌÕı³£..");
+//        	System.out.println("æµç¨‹æ­£å¸¸..");
 //		} catch (Exception e) {
 //			// TODO: handle exception
 //			System.out.println(e.getMessage());

@@ -1,14 +1,14 @@
 package com.atguigu.adapter.classadapter;
 
-//ÊÊÅäÆ÷Àà
+//é–«å‚å¤é£ã„§è¢«
 public class VoltageAdapter extends Voltage220V implements IVoltage5V {
 
 	@Override
 	public int output5V() {
 		// TODO Auto-generated method stub
-		//»ñÈ¡µ½220VµçÑ¹
+		//é‘¾å³°å½‡é’ï¿½220Vé¢é›å¸‡
 		int srcV = output220V();
-		int dstV = srcV / 44 ; //×ª³É 5v
+		int dstV = srcV / 44 ; //æî„åš 5v
 		return dstV;
 	}
 

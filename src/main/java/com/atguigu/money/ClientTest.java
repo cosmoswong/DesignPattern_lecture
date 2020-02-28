@@ -1,22 +1,22 @@
 package com.atguigu.money;
 
-/**²âÊÔÀà*/
+/**æµ‹è¯•ç±»*/
 public class ClientTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Context context = new Context();
         context.setState(new PublishState());
-        //È»ºó¿ÉÒÔ¸ù¾İ²Ù×÷±ä»¯×´Ì¬.
+        //ç„¶åå¯ä»¥æ ¹æ®æ“ä½œå˜åŒ–çŠ¶æ€.
         
         //publish --> not pay
        context.acceptOrderEvent(context);
 //        //not pay --> paid
         context.payOrderEvent(context);
-//        // Ê§°Ü, ¼ì²âÊ§°ÜÊ±£¬»áÅ×³öÒì³£
+//        // å¤±è´¥, æ£€æµ‹å¤±è´¥æ—¶ï¼Œä¼šæŠ›å‡ºå¼‚å¸¸
 //        try {
 //        	context.checkFailEvent(context);
-//        	System.out.println("Á÷³ÌÕı³£..");
+//        	System.out.println("æµç¨‹æ­£å¸¸..");
 //		} catch (Exception e) {
 //			// TODO: handle exception
 //			System.out.println(e.getMessage());

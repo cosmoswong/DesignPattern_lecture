@@ -6,7 +6,7 @@ package com.atguigu.app;
  */
 public class DispenseState extends State {
 
-	 // ³õÊ¼»¯Ê±´«Èë»î¶¯ÒıÓÃ£¬·¢·Å½±Æ·ºó¸Ä±äÆä×´Ì¬
+	 // åˆå§‹åŒ–æ—¶ä¼ å…¥æ´»åŠ¨å¼•ç”¨ï¼Œå‘æ”¾å¥–å“åæ”¹å˜å…¶çŠ¶æ€
     RaffleActivity activity;
 
     public DispenseState(RaffleActivity activity) {
@@ -15,24 +15,24 @@ public class DispenseState extends State {
 
     @Override
     public void deductMoney() {
-        System.out.println("²»ÄÜ¿Û³ı»ı·Ö");
+        System.out.println("ä¸èƒ½æ‰£é™¤ç§¯åˆ†");
     }
 
     @Override
     public boolean raffle() {
-        System.out.println("²»ÄÜ³é½±");
+        System.out.println("ä¸èƒ½æŠ½å¥–");
         return false;
     }
 
     @Override
     public void dispensePrize() {
         if(activity.getCount() > 0){
-            System.out.println("¹§Ï²ÖĞ½±ÁË");
-            // ¸Ä±ä×´Ì¬Îª²»ÄÜ³é½±
+            System.out.println("æ­å–œä¸­å¥–äº†");
+            // æ”¹å˜çŠ¶æ€ä¸ºä¸èƒ½æŠ½å¥–
             activity.setState(activity.getNoRafflleState());
         }else{
-            System.out.println("ºÜÒÅº¶£¬½±Æ··¢ËÍÍêÁË");
-            // ¸Ä±ä×´Ì¬Îª½±Æ··¢ËÍÍê±Ï
+            System.out.println("å¾ˆé—æ†¾ï¼Œå¥–å“å‘é€å®Œäº†");
+            // æ”¹å˜çŠ¶æ€ä¸ºå¥–å“å‘é€å®Œæ¯•
             activity.setState(activity.getDispensOutState());
         }
 

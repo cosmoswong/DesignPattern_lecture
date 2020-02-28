@@ -1,7 +1,7 @@
 package com.atguigu.app;
 
 /**
- * ×´Ì¬Ä£Ê½²âÊÔÀà
+ * çŠ¶æ€æ¨¡å¼æµ‹è¯•ç±»
  * @author Administrator
  *
  */
@@ -9,16 +9,16 @@ public class ClientTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// ´´½¨»î¶¯¶ÔÏó£¬½±Æ·³ØÓĞ5¸ö½±Æ·
+		// åˆ›å»ºæ´»åŠ¨å¯¹è±¡ï¼Œå¥–å“æ± æœ‰5ä¸ªå¥–å“
         RaffleActivity activity = new RaffleActivity(1);
 
-        // ÎÒÃÇÁ¬Ğø³éÈı´Î½±
+        // æˆ‘ä»¬è¿ç»­æŠ½ä¸‰æ¬¡å¥–
         for (int i = 0; i < 300; i++) {
-            System.out.println("--------µÚ" + (i + 1) + "´Î³é½±----------");
-            // ²Î¼Ó³é½±£¬µÚÒ»²½µã»÷¿Û³ı»ı·Ö
+            System.out.println("--------ç¬¬" + (i + 1) + "æ¬¡æŠ½å¥–----------");
+            // å‚åŠ æŠ½å¥–ï¼Œç¬¬ä¸€æ­¥ç‚¹å‡»æ‰£é™¤ç§¯åˆ†
             activity.debuctMoney();
 
-            // µÚ¶ş²½³é½±
+            // ç¬¬äºŒæ­¥æŠ½å¥–
             activity.raffle();
         }
 	}

@@ -1,8 +1,8 @@
 package com.atguigu.uml.composition;
 
 public class Computer {
-	private Mouse mouse = new Mouse(); //鼠标可以和computer不能分离
-	private Moniter moniter = new Moniter();//显示器可以和Computer不能分离
+	private Mouse mouse = new Mouse(); //榧犳爣鍙互鍜宑omputer涓嶈兘鍒嗙
+	private Moniter moniter = new Moniter();//鏄剧ず鍣ㄥ彲浠ュ拰Computer涓嶈兘鍒嗙
 	public void setMouse(Mouse mouse) {
 		this.mouse = mouse;
 	}

@@ -3,10 +3,10 @@ package com.atguigu.observer.improve;
 import java.util.ArrayList;
 
 /**
- * ÀàÊÇºËĞÄ
- * 1. °üº¬×îĞÂµÄÌìÆøÇé¿öĞÅÏ¢ 
- * 2. º¬ÓĞ ¹Û²ìÕß¼¯ºÏ£¬Ê¹ÓÃArrayList¹ÜÀí
- * 3. µ±Êı¾İÓĞ¸üĞÂÊ±£¬¾ÍÖ÷¶¯µÄµ÷ÓÃ   ArrayList, Í¨ÖªËùÓĞµÄ£¨½ÓÈë·½£©¾Í¿´µ½×îĞÂµÄĞÅÏ¢
+ * ç±»æ˜¯æ ¸å¿ƒ
+ * 1. åŒ…å«æœ€æ–°çš„å¤©æ°”æƒ…å†µä¿¡æ¯ 
+ * 2. å«æœ‰ è§‚å¯Ÿè€…é›†åˆï¼Œä½¿ç”¨ArrayListç®¡ç†
+ * 3. å½“æ•°æ®æœ‰æ›´æ–°æ—¶ï¼Œå°±ä¸»åŠ¨çš„è°ƒç”¨   ArrayList, é€šçŸ¥æ‰€æœ‰çš„ï¼ˆæ¥å…¥æ–¹ï¼‰å°±çœ‹åˆ°æœ€æ–°çš„ä¿¡æ¯
  * @author Administrator
  *
  */
@@ -14,10 +14,10 @@ public class WeatherData implements Subject {
 	private float temperatrue;
 	private float pressure;
 	private float humidity;
-	//¹Û²ìÕß¼¯ºÏ
+	//è§‚å¯Ÿè€…é›†åˆ
 	private ArrayList<Observer> observers;
 	
-	//¼ÓÈëĞÂµÄµÚÈı·½
+	//åŠ å…¥æ–°çš„ç¬¬ä¸‰æ–¹
 
 	public WeatherData() {
 		observers = new ArrayList<Observer>();
@@ -36,28 +36,28 @@ public class WeatherData implements Subject {
 	}
 
 	public void dataChange() {
-		//µ÷ÓÃ ½ÓÈë·½µÄ update
+		//è°ƒç”¨ æ¥å…¥æ–¹çš„ update
 		
 		notifyObservers();
 	}
 
-	//µ±Êı¾İÓĞ¸üĞÂÊ±£¬¾Íµ÷ÓÃ setData
+	//å½“æ•°æ®æœ‰æ›´æ–°æ—¶ï¼Œå°±è°ƒç”¨ setData
 	public void setData(float temperature, float pressure, float humidity) {
 		this.temperatrue = temperature;
 		this.pressure = pressure;
 		this.humidity = humidity;
-		//µ÷ÓÃdataChange£¬ ½«×îĞÂµÄĞÅÏ¢ ÍÆËÍ¸ø ½ÓÈë·½ currentConditions
+		//è°ƒç”¨dataChangeï¼Œ å°†æœ€æ–°çš„ä¿¡æ¯ æ¨é€ç»™ æ¥å…¥æ–¹ currentConditions
 		dataChange();
 	}
 
-	//×¢²áÒ»¸ö¹Û²ìÕß
+	//æ³¨å†Œä¸€ä¸ªè§‚å¯Ÿè€…
 	@Override
 	public void registerObserver(Observer o) {
 		// TODO Auto-generated method stub
 		observers.add(o);
 	}
 
-	//ÒÆ³ıÒ»¸ö¹Û²ìÕß
+	//ç§»é™¤ä¸€ä¸ªè§‚å¯Ÿè€…
 	@Override
 	public void removeObserver(Observer o) {
 		// TODO Auto-generated method stub
@@ -66,7 +66,7 @@ public class WeatherData implements Subject {
 		}
 	}
 
-	//±éÀúËùÓĞµÄ¹Û²ìÕß£¬²¢Í¨Öª
+	//éå†æ‰€æœ‰çš„è§‚å¯Ÿè€…ï¼Œå¹¶é€šçŸ¥
 	@Override
 	public void notifyObservers() {
 		// TODO Auto-generated method stub

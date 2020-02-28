@@ -1,6 +1,6 @@
 package com.atguigu.builder.improve;
 
-//²úÆ·->Product
+//äº§å“->Product
 public class House {
 	private String baise;
 	private String wall;

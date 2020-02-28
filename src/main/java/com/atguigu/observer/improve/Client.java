@@ -4,26 +4,26 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öWeatherData
+		//åˆ›å»ºä¸€ä¸ªWeatherData
 		WeatherData weatherData = new WeatherData();
 		
-		//´´½¨¹Û²ìÕß
+		//åˆ›å»ºè§‚å¯Ÿè€…
 		CurrentConditions currentConditions = new CurrentConditions();
 		BaiduSite baiduSite = new BaiduSite();
 		
-		//×¢²áµ½weatherData
+		//æ³¨å†Œåˆ°weatherData
 		weatherData.registerObserver(currentConditions);
 		weatherData.registerObserver(baiduSite);
 		
-		//²âÊÔ
-		System.out.println("Í¨Öª¸÷¸ö×¢²áµÄ¹Û²ìÕß, ¿´¿´ĞÅÏ¢");
+		//æµ‹è¯•
+		System.out.println("é€šçŸ¥å„ä¸ªæ³¨å†Œçš„è§‚å¯Ÿè€…, çœ‹çœ‹ä¿¡æ¯");
 		weatherData.setData(10f, 100f, 30.3f);
 		
 		
 		weatherData.removeObserver(currentConditions);
-		//²âÊÔ
+		//æµ‹è¯•
 		System.out.println();
-		System.out.println("Í¨Öª¸÷¸ö×¢²áµÄ¹Û²ìÕß, ¿´¿´ĞÅÏ¢");
+		System.out.println("é€šçŸ¥å„ä¸ªæ³¨å†Œçš„è§‚å¯Ÿè€…, çœ‹çœ‹ä¿¡æ¯");
 		weatherData.setData(10f, 100f, 30.3f);
 	}
 

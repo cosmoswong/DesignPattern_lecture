@@ -16,22 +16,22 @@ public class CanRaffleState extends State {
 
     @Override
     public void deductMoney() {
-        System.out.println("ÒÑ¾­¿ÛÈ¡¹ıÁË»ı·Ö");
+        System.out.println("å·²ç»æ‰£å–è¿‡äº†ç§¯åˆ†");
     }
 
     @Override
     public boolean raffle() {
-        System.out.println("ÕıÔÚ³é½±£¬ÇëÉÔµÈ£¡");
+        System.out.println("æ­£åœ¨æŠ½å¥–ï¼Œè¯·ç¨ç­‰ï¼");
         Random r = new Random();
         int num = r.nextInt(10);
-        // 10%ÖĞ½±»ú»á
+        // 10%ä¸­å¥–æœºä¼š
         if(num == 0){
-            // ¸Ä±ä»î¶¯×´Ì¬Îª·¢·Å½±Æ·
+            // æ”¹å˜æ´»åŠ¨çŠ¶æ€ä¸ºå‘æ”¾å¥–å“
             activity.setState(activity.getDispenseState());
             return true;
         }else{
-            System.out.println("ºÜÒÅº¶Ã»ÓĞ³éÖĞ½±Æ·£¡");
-            // ¸Ä±ä×´Ì¬Îª²»ÄÜ³é½±
+            System.out.println("å¾ˆé—æ†¾æ²¡æœ‰æŠ½ä¸­å¥–å“ï¼");
+            // æ”¹å˜çŠ¶æ€ä¸ºä¸èƒ½æŠ½å¥–
             activity.setState(activity.getNoRafflleState());
             return false;
         }
@@ -39,6 +39,6 @@ public class CanRaffleState extends State {
 
     @Override
     public void dispensePrize() {
-        System.out.println("Ã»ÖĞ½±£¬²»ÄÜ·¢·Å½±Æ·");
+        System.out.println("æ²¡ä¸­å¥–ï¼Œä¸èƒ½å‘æ”¾å¥–å“");
     }
 }

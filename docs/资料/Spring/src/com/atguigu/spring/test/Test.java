@@ -10,7 +10,7 @@ public class Test {
 		// System.out.println("new~~");
 		// ApplicationContext applicationContext = new
 		// ClassPathXmlApplicationContext("beans.xml");
-		// //获取monster[通过id获取monster]
+		// //鑾峰彇monster[閫氳繃id鑾峰彇monster]
 		// Object bean = applicationContext.getBean("id01");
 		// System.out.println("bean" + bean);
 

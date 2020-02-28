@@ -1,10 +1,10 @@
 package com.atguigu.observer;
 
 /**
- * ÀàÊÇºËĞÄ
- * 1. °üº¬×îĞÂµÄÌìÆøÇé¿öĞÅÏ¢ 
- * 2. º¬ÓĞ CurrentConditions ¶ÔÏó
- * 3. µ±Êı¾İÓĞ¸üĞÂÊ±£¬¾ÍÖ÷¶¯µÄµ÷ÓÃ   CurrentConditions¶ÔÏóupdate·½·¨(º¬ display), ÕâÑùËûÃÇ£¨½ÓÈë·½£©¾Í¿´µ½×îĞÂµÄĞÅÏ¢
+ * ç±»æ˜¯æ ¸å¿ƒ
+ * 1. åŒ…å«æœ€æ–°çš„å¤©æ°”æƒ…å†µä¿¡æ¯ 
+ * 2. å«æœ‰ CurrentConditions å¯¹è±¡
+ * 3. å½“æ•°æ®æœ‰æ›´æ–°æ—¶ï¼Œå°±ä¸»åŠ¨çš„è°ƒç”¨   CurrentConditionså¯¹è±¡updateæ–¹æ³•(å« display), è¿™æ ·ä»–ä»¬ï¼ˆæ¥å…¥æ–¹ï¼‰å°±çœ‹åˆ°æœ€æ–°çš„ä¿¡æ¯
  * @author Administrator
  *
  */
@@ -13,7 +13,7 @@ public class WeatherData {
 	private float pressure;
 	private float humidity;
 	private CurrentConditions currentConditions;
-	//¼ÓÈëĞÂµÄµÚÈı·½
+	//åŠ å…¥æ–°çš„ç¬¬ä¸‰æ–¹
 
 	public WeatherData(CurrentConditions currentConditions) {
 		this.currentConditions = currentConditions;
@@ -32,16 +32,16 @@ public class WeatherData {
 	}
 
 	public void dataChange() {
-		//µ÷ÓÃ ½ÓÈë·½µÄ update
+		//è°ƒç”¨ æ¥å…¥æ–¹çš„ update
 		currentConditions.update(getTemperature(), getPressure(), getHumidity());
 	}
 
-	//µ±Êı¾İÓĞ¸üĞÂÊ±£¬¾Íµ÷ÓÃ setData
+	//å½“æ•°æ®æœ‰æ›´æ–°æ—¶ï¼Œå°±è°ƒç”¨ setData
 	public void setData(float temperature, float pressure, float humidity) {
 		this.temperatrue = temperature;
 		this.pressure = pressure;
 		this.humidity = humidity;
-		//µ÷ÓÃdataChange£¬ ½«×îĞÂµÄĞÅÏ¢ ÍÆËÍ¸ø ½ÓÈë·½ currentConditions
+		//è°ƒç”¨dataChangeï¼Œ å°†æœ€æ–°çš„ä¿¡æ¯ æ¨é€ç»™ æ¥å…¥æ–¹ currentConditions
 		dataChange();
 	}
 }

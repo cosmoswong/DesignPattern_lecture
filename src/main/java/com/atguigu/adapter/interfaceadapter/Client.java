@@ -4,11 +4,11 @@ public class Client {
 	public static void main(String[] args) {
 		
 		AbsAdapter absAdapter = new AbsAdapter() {
-			//Ö»ĞèÒªÈ¥¸²¸ÇÎÒÃÇ ĞèÒªÊ¹ÓÃ ½Ó¿Ú·½·¨
+			//é™îˆæ¸¶ç‘•ä½¸å¹“ç‘•å—™æ´Šé´æˆœæ»‘ é—‡ï¿½ç‘•ä½·å¨‡é¢ï¿½ éºãƒ¥å½›é‚è§„ç¡¶
 			@Override
 			public void m1() {
 				// TODO Auto-generated method stub
-				System.out.println("Ê¹ÓÃÁËm1µÄ·½·¨");
+				System.out.println("æµ£è·¨æ•¤æµœå”Œ1é¨å‹¬æŸŸå¨‰ï¿½");
 			}
 		};
 		

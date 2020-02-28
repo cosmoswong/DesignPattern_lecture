@@ -1,14 +1,14 @@
 package com.atguigu.state;
 
 /**
- * ½±Æ··¢·ÅÍê±Ï×´Ì¬
- * ËµÃ÷£¬µ±ÎÒÃÇactivity ¸Ä±ä³É DispenseOutState£¬ ³é½±»î¶¯½áÊø
+ * å¥–å“å‘æ”¾å®Œæ¯•çŠ¶æ€
+ * è¯´æ˜ï¼Œå½“æˆ‘ä»¬activity æ”¹å˜æˆ DispenseOutStateï¼Œ æŠ½å¥–æ´»åŠ¨ç»“æŸ
  * @author Administrator
  *
  */
 public class DispenseOutState extends State {
 
-	// ³õÊ¼»¯Ê±´«Èë»î¶¯ÒıÓÃ
+	// åˆå§‹åŒ–æ—¶ä¼ å…¥æ´»åŠ¨å¼•ç”¨
     RaffleActivity activity;
 
     public DispenseOutState(RaffleActivity activity) {
@@ -16,17 +16,17 @@ public class DispenseOutState extends State {
     }
     @Override
     public void deductMoney() {
-        System.out.println("½±Æ··¢ËÍÍêÁË£¬ÇëÏÂ´ÎÔÙ²Î¼Ó");
+        System.out.println("å¥–å“å‘é€å®Œäº†ï¼Œè¯·ä¸‹æ¬¡å†å‚åŠ ");
     }
 
     @Override
     public boolean raffle() {
-        System.out.println("½±Æ··¢ËÍÍêÁË£¬ÇëÏÂ´ÎÔÙ²Î¼Ó");
+        System.out.println("å¥–å“å‘é€å®Œäº†ï¼Œè¯·ä¸‹æ¬¡å†å‚åŠ ");
         return false;
     }
 
     @Override
     public void dispensePrize() {
-        System.out.println("½±Æ··¢ËÍÍêÁË£¬ÇëÏÂ´ÎÔÙ²Î¼Ó");
+        System.out.println("å¥–å“å‘é€å®Œäº†ï¼Œè¯·ä¸‹æ¬¡å†å‚åŠ ");
     }
 }

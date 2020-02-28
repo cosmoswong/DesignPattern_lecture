@@ -15,14 +15,14 @@ public class DispatchServlet {
 
 	public void doDispatch() {
 
-		// 此处模拟SpringMVC从request取handler的对象，
-		// 适配器可以获取到希望的Controller
+		// 姝ゅ妯℃嫙SpringMVC浠巖equest鍙杊andler鐨勫璞★紝
+		// 閫傞厤鍣ㄥ彲浠ヨ幏鍙栧埌甯屾湜鐨凜ontroller
 		// HttpController controller = new HttpController();
 		 AnnotationController controller = new AnnotationController();
 		//SimpleController controller = new SimpleController();
-		// 得到对应适配器
+		// 寰楀埌瀵瑰簲閫傞厤鍣�
 		HandlerAdapter adapter = getHandler(controller);
-		// 通过适配器执行对应的controller对应方法
+		// 閫氳繃閫傞厤鍣ㄦ墽琛屽搴旂殑controller瀵瑰簲鏂规硶
 		adapter.handle(controller);
 
 	}

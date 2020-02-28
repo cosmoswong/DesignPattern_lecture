@@ -2,12 +2,12 @@ package com.atguigu.observer.improve;
 
 public class BaiduSite implements Observer {
 
-	// ÎÂ¶È£¬ÆøÑ¹£¬Êª¶È
+	// æ¸©åº¦ï¼Œæ°”å‹ï¼Œæ¹¿åº¦
 	private float temperature;
 	private float pressure;
 	private float humidity;
 
-	// ¸üĞÂ ÌìÆøÇé¿ö£¬ÊÇÓÉ WeatherData À´µ÷ÓÃ£¬ÎÒÊ¹ÓÃÍÆËÍÄ£Ê½
+	// æ›´æ–° å¤©æ°”æƒ…å†µï¼Œæ˜¯ç”± WeatherData æ¥è°ƒç”¨ï¼Œæˆ‘ä½¿ç”¨æ¨é€æ¨¡å¼
 	public void update(float temperature, float pressure, float humidity) {
 		this.temperature = temperature;
 		this.pressure = pressure;
@@ -15,12 +15,12 @@ public class BaiduSite implements Observer {
 		display();
 	}
 
-	// ÏÔÊ¾
+	// æ˜¾ç¤º
 	public void display() {
-		System.out.println("===°Ù¶ÈÍøÕ¾====");
-		System.out.println("***°Ù¶ÈÍøÕ¾ ÆøÎÂ : " + temperature + "***");
-		System.out.println("***°Ù¶ÈÍøÕ¾ ÆøÑ¹: " + pressure + "***");
-		System.out.println("***°Ù¶ÈÍøÕ¾ Êª¶È: " + humidity + "***");
+		System.out.println("===ç™¾åº¦ç½‘ç«™====");
+		System.out.println("***ç™¾åº¦ç½‘ç«™ æ°”æ¸© : " + temperature + "***");
+		System.out.println("***ç™¾åº¦ç½‘ç«™ æ°”å‹: " + pressure + "***");
+		System.out.println("***ç™¾åº¦ç½‘ç«™ æ¹¿åº¦: " + humidity + "***");
 	}
 
 }

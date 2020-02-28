@@ -1,7 +1,7 @@
 package com.atguigu.adapter.classadapter;
 
 
-//ÊÊÅä½Ó¿Ú
+//é–«å‚å¤éºãƒ¥å½›
 public interface IVoltage5V {
 	public int output5V();
 }

@@ -5,17 +5,17 @@ public class Client {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		DeepProtoType p = new DeepProtoType();
-		p.name = "ËÎ½­";
-		p.deepCloneableTarget = new DeepCloneableTarget("´óÅ£", "Ğ¡Å£");
+		p.name = "ç€¹å¬«ç™";
+		p.deepCloneableTarget = new DeepCloneableTarget("æ¾¶Ñ…å¢°", "çå¿•å¢°");
 		
-		//·½Ê½1 Íê³ÉÉî¿½±´
+		//é‚ç‘°ç´¡1 ç€¹å±¾åšå¨£è¾¨å«¹ç’ï¿½
 		
 //		DeepProtoType p2 = (DeepProtoType) p.clone();
 //		
 //		System.out.println("p.name=" + p.name + "p.deepCloneableTarget=" + p.deepCloneableTarget.hashCode());
 //		System.out.println("p2.name=" + p.name + "p2.deepCloneableTarget=" + p2.deepCloneableTarget.hashCode());
 	
-		//·½Ê½2 Íê³ÉÉî¿½±´
+		//é‚ç‘°ç´¡2 ç€¹å±¾åšå¨£è¾¨å«¹ç’ï¿½
 		DeepProtoType p2 = (DeepProtoType) p.deepClone();
 		
 		System.out.println("p.name=" + p.name + "p.deepCloneableTarget=" + p.deepCloneableTarget.hashCode());

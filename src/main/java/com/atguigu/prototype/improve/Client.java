@@ -5,16 +5,16 @@ package com.atguigu.prototype.improve;
 public class Client {
 
 	public static void main(String[] args) {
-		System.out.println("ԭ��ģʽ��ɶ���Ĵ���");
+		System.out.println("鍘熷瀷妯″紡瀹屾垚瀵硅薄鐨勫垱寤�");
 		// TODO Auto-generated method stub
-		Sheep sheep = new Sheep("tom", 1, "��ɫ");
+		Sheep sheep = new Sheep("tom", 1, "鐧借壊");
 		
-		sheep.friend = new Sheep("jack", 2, "��ɫ");
+		sheep.friend = new Sheep("jack", 2, "榛戣壊");
 		
-		Sheep sheep2 = (Sheep)sheep.clone(); //��¡
-		Sheep sheep3 = (Sheep)sheep.clone(); //��¡
-		Sheep sheep4 = (Sheep)sheep.clone(); //��¡
-		Sheep sheep5 = (Sheep)sheep.clone(); //��¡
+		Sheep sheep2 = (Sheep)sheep.clone(); //鍏嬮殕
+		Sheep sheep3 = (Sheep)sheep.clone(); //鍏嬮殕
+		Sheep sheep4 = (Sheep)sheep.clone(); //鍏嬮殕
+		Sheep sheep5 = (Sheep)sheep.clone(); //鍏嬮殕
 		
 		System.out.println("sheep2 =" + sheep2 + "sheep2.friend=" + sheep2.friend.hashCode());
 		System.out.println("sheep3 =" + sheep3 + "sheep3.friend=" + sheep3.friend.hashCode());

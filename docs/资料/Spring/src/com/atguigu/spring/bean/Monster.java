@@ -1,21 +1,21 @@
 package com.atguigu.spring.bean;
 
 /**
- * 注释
+ * 娉ㄩ噴
  * @author Administrator
  *
  */
 public class Monster {
 
 	private Integer id = 10 ;
-	private String nickname = "牛魔王";
-	private String skill = "芭蕉扇";
+	private String nickname = "鐗涢瓟鐜�";
+	private String skill = "鑺晧鎵�";
 	public Monster() {
 		
-		System.out.println("monster 创建..");
+		System.out.println("monster 鍒涘缓..");
 	}
 	public Monster(Integer id, String nickname, String skill) {
-		//System.out.println("Integer id, String nickname, String skill被调用");
+		//System.out.println("Integer id, String nickname, String skill琚皟鐢�");
 		this.id = id;
 		this.nickname = nickname;
 		this.skill = skill;

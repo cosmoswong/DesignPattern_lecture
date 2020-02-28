@@ -3,7 +3,7 @@ package com.atguigu.memento.theory;
 public class Memento {
 	private String state;
 
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public Memento(String state) {
 		super();
 		this.state = state;

@@ -5,7 +5,7 @@ public class TeacherDao implements ITeacherDao {
 	@Override
 	public void teach() {
 		// TODO Auto-generated method stub
-		System.out.println(" ÀÏÊ¦ÊÚ¿ÎÖĞ  ¡£¡£¡£¡£¡£");
+		System.out.println(" é–¼é¢ç¤ç»—ï¿½é–¹å“„ç‰é¡•è™«ç¨‰é”Ÿï¿½  é–µå——å€¶é”Ÿè—‰å€¶é”Ÿè—‰å€¶é”Ÿè—‰å€¶é”Ÿæ–¤æ‹·");
 	}
 
 }

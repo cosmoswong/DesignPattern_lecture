@@ -5,19 +5,19 @@ public class Vivo implements Brand {
 	@Override
 	public void open() {
 		// TODO Auto-generated method stub
-		System.out.println(" VivoÊÖ»ú¿ª»ú ");
+		System.out.println(" Vivoæ‰‹æœºå¼€æœº ");
 	}
 
 	@Override
 	public void close() {
 		// TODO Auto-generated method stub
-		System.out.println(" VivoÊÖ»ú¹Ø»ú ");
+		System.out.println(" Vivoæ‰‹æœºå…³æœº ");
 	}
 
 	@Override
 	public void call() {
 		// TODO Auto-generated method stub
-		System.out.println(" VivoÊÖ»ú´òµç»° ");
+		System.out.println(" Vivoæ‰‹æœºæ‰“ç”µè¯ ");
 	}
 
 }

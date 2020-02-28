@@ -4,28 +4,28 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨ÓÎÏ·½ÇÉ«
+		//åˆ›å»ºæ¸¸æˆè§’è‰²
 		GameRole gameRole = new GameRole();
 		gameRole.setVit(100);
 		gameRole.setDef(100);
 		
-		System.out.println("ºÍboss´óÕ½Ç°µÄ×´Ì¬");
+		System.out.println("å’Œbosså¤§æˆ˜å‰çš„çŠ¶æ€");
 		gameRole.display();
 		
-		//°Ñµ±Ç°×´Ì¬±£´æcaretaker
+		//æŠŠå½“å‰çŠ¶æ€ä¿å­˜caretaker
 		Caretaker caretaker = new Caretaker();
 		caretaker.setMemento(gameRole.createMemento());
 		
-		System.out.println("ºÍboss´óÕ½~~~");
+		System.out.println("å’Œbosså¤§æˆ˜~~~");
 		gameRole.setDef(30);
 		gameRole.setVit(30);
 		
 		gameRole.display();
 		
-		System.out.println("´óÕ½ºó£¬Ê¹ÓÃ±¸ÍüÂ¼¶ÔÏó»Ö¸´µ½Õ¾Ç°");
+		System.out.println("å¤§æˆ˜åï¼Œä½¿ç”¨å¤‡å¿˜å½•å¯¹è±¡æ¢å¤åˆ°ç«™å‰");
 		
 		gameRole.recoverGameRoleFromMemento(caretaker.getMemento());
-		System.out.println("»Ö¸´ºóµÄ×´Ì¬");
+		System.out.println("æ¢å¤åçš„çŠ¶æ€");
 		gameRole.display();
 	}
 

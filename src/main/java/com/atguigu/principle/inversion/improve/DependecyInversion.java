@@ -3,7 +3,7 @@ package com.atguigu.principle.inversion.improve;
 public class DependecyInversion {
 
 	public static void main(String[] args) {
-		//¿Í»§¶ËÎŞĞè¸Ä±ä
+		//å®¢æˆ·ç«¯æ— éœ€æ”¹å˜
 		Person person = new Person();
 		person.receive(new Email());
 		
@@ -12,27 +12,27 @@ public class DependecyInversion {
 
 }
 
-//¶¨Òå½Ó¿Ú
+//å®šä¹‰æ¥å£
 interface IReceiver {
 	public String getInfo();
 }
 
 class Email implements IReceiver {
 	public String getInfo() {
-		return "µç×ÓÓÊ¼şĞÅÏ¢: hello,world";
+		return "ç”µå­é‚®ä»¶ä¿¡æ¯: hello,world";
 	}
 }
 
-//Ôö¼ÓÎ¢ĞÅ
+//å¢åŠ å¾®ä¿¡
 class WeiXin implements IReceiver {
 	public String getInfo() {
-		return "Î¢ĞÅĞÅÏ¢: hello,ok";
+		return "å¾®ä¿¡ä¿¡æ¯: hello,ok";
 	}
 }
 
-//·½Ê½2
+//æ–¹å¼2
 class Person {
-	//ÕâÀïÎÒÃÇÊÇ¶Ô½Ó¿ÚµÄÒÀÀµ
+	//è¿™é‡Œæˆ‘ä»¬æ˜¯å¯¹æ¥å£çš„ä¾èµ–
 	public void receive(IReceiver receiver ) {
 		System.out.println(receiver.getInfo());
 	}

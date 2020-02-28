@@ -46,7 +46,7 @@ class CollegeManager {
 		List<CollegeEmployee> list = new ArrayList<CollegeEmployee>();
 		for (int i = 0; i < 10; i++) {
 			CollegeEmployee emp = new CollegeEmployee();
-			emp.setId("ѧԺԱ��id= " + i);
+			emp.setId("学院员工id= " + i);
 			list.add(emp);
 		}
 		return list;
@@ -60,7 +60,7 @@ class SchoolManager {
 		
 		for (int i = 0; i < 5; i++) {
 			Employee emp = new Employee();
-			emp.setId("ѧУ�ܲ�Ա��id= " + i);
+			emp.setId("学校总部员工id= " + i);
 			list.add(emp);
 		}
 		return list;
@@ -69,12 +69,12 @@ class SchoolManager {
 	void printAllEmployee(CollegeManager sub) {
 		
 		List<CollegeEmployee> list1 = sub.getAllEmployee();
-		System.out.println("------------�ֹ�˾Ա��------------");
+		System.out.println("------------分公司员工------------");
 		for (CollegeEmployee e : list1) {
 			System.out.println(e.getId());
 		}
 		List<Employee> list2 = this.getAllEmployee();
-		System.out.println("------------ѧУ�ܲ�Ա��------------");
+		System.out.println("------------学校总部员工------------");
 		for (Employee e : list2) {
 			System.out.println(e.getId());
 		}

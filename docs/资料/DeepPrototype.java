@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
- * Éî¶È¿½±´µÄÊµÏÖ¿½±´µÄÁ½ÖÖ·½Ê½
+ * æ·±åº¦æ‹·è´çš„å®ç°æ‹·è´çš„ä¸¤ç§æ–¹å¼
  * @author Administrator
  *
  */
@@ -27,37 +27,37 @@ public class DeepPrototype implements Serializable, Cloneable {
 
 	}
 
-	// ·½Ê½1 £ºÍ¨¹ıÖØĞ´clone·½·¨À´ÊµÏÖÉî¿½±´ £¨ÒıÓÃ¶ÔÏó¶à£¬ÕâÖÖ·½·¨±È½Ï·±Ëö£©
+	// æ–¹å¼1 ï¼šé€šè¿‡é‡å†™cloneæ–¹æ³•æ¥å®ç°æ·±æ‹·è´ ï¼ˆå¼•ç”¨å¯¹è±¡å¤šï¼Œè¿™ç§æ–¹æ³•æ¯”è¾ƒç¹çï¼‰
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		Object deep = null;
 		try {
-			deep = super.clone();//ÕâÀïÍê³É¶Ô»ù±¾Êı¾İÀàĞÍµÄ¿ËÂ¡
+			deep = super.clone();//è¿™é‡Œå®Œæˆå¯¹åŸºæœ¬æ•°æ®ç±»å‹çš„å…‹éš†
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
 		
 		DeepPrototype deepPrototype = (DeepPrototype) deep;
-		//¶ÔÒıÓÃÀàĞÍ£¬ĞèÒªµ¥¶À´¦Àí
+		//å¯¹å¼•ç”¨ç±»å‹ï¼Œéœ€è¦å•ç‹¬å¤„ç†
 		deepPrototype.deepCloneableTarget = (DeepCloneableTarget) deepPrototype.deepCloneableTarget.clone();
 		return deepPrototype;
 	}
 
-	// ·½Ê½2£º Í¨¹ı¶ÔÏóĞòÁĞ»¯ÊµÏÖÉî¿½±´ £¨ÍÆ¼ö£©
+	// æ–¹å¼2ï¼š é€šè¿‡å¯¹è±¡åºåˆ—åŒ–å®ç°æ·±æ‹·è´ ï¼ˆæ¨èï¼‰
 	public Object deepClone() {
-		 //Éî¶È¿ËÂ¡
+		 //æ·±åº¦å…‹éš†
         ByteArrayOutputStream bos = null;
         ObjectOutputStream oos = null;
         ByteArrayInputStream bis = null;
         ObjectInputStream ois = null;
         try {
-            //return super.clone();//Ä¬ÈÏÇ³¿ËÂ¡£¬Ö»¿ËÂ¡°Ë´ó»ù±¾Êı¾İÀàĞÍºÍString
-            //ĞòÁĞ»¯
+            //return super.clone();//é»˜è®¤æµ…å…‹éš†ï¼Œåªå…‹éš†å…«å¤§åŸºæœ¬æ•°æ®ç±»å‹å’ŒString
+            //åºåˆ—åŒ–
             bos = new ByteArrayOutputStream();
             oos = new ObjectOutputStream(bos);
             oos.writeObject(this);
             
-            //·´ĞòÁĞ»¯
+            //ååºåˆ—åŒ–
             bis = new ByteArrayInputStream(bos.toByteArray());
             ois = new ObjectInputStream(bis);
             DeepPrototype copy = (DeepPrototype)ois.readObject();

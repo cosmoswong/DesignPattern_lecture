@@ -1,13 +1,13 @@
 package com.atguigu.spring.springmvcadapter;
 
-///定义一个Adapter接口 
+///瀹氫箟涓�涓狝dapter鎺ュ彛 
 public interface HandlerAdapter {
 	public boolean supports(Object handler);
 
 	public void handle(Object handler);
 }
 
-// 多种适配器类
+// 澶氱閫傞厤鍣ㄧ被
 
 class SimpleHandlerAdapter implements HandlerAdapter {
 

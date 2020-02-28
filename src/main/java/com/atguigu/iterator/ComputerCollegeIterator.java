@@ -5,9 +5,9 @@ import java.util.Iterator;
 
 public class ComputerCollegeIterator implements Iterator {
 
-	//ÕâÀïÎÒÃÇĞèÒªDepartment ÊÇÒÔÔõÑùµÄ·½Ê½´æ·Å=>Êı×é
+	//è¿™é‡Œæˆ‘ä»¬éœ€è¦Department æ˜¯ä»¥æ€æ ·çš„æ–¹å¼å­˜æ”¾=>æ•°ç»„
 	Department[] departments;
-	int position = 0; //±éÀúµÄÎ»ÖÃ
+	int position = 0; //éå†çš„ä½ç½®
 	
 	
 	
@@ -16,7 +16,7 @@ public class ComputerCollegeIterator implements Iterator {
 		this.departments = departments;
 	}
 
-	//ÅĞ¶ÏÊÇ·ñ»¹ÓĞÏÂÒ»¸öÔªËØ
+	//åˆ¤æ–­æ˜¯å¦è¿˜æœ‰ä¸‹ä¸€ä¸ªå…ƒç´ 
 	@Override
 	public boolean hasNext() {
 		// TODO Auto-generated method stub
@@ -36,7 +36,7 @@ public class ComputerCollegeIterator implements Iterator {
 		return department;
 	}
 	
-	//É¾³ıµÄ·½·¨£¬Ä¬ÈÏ¿ÕÊµÏÖ
+	//åˆ é™¤çš„æ–¹æ³•ï¼Œé»˜è®¤ç©ºå®ç°
 	public void remove() {
 		
 	}

@@ -2,7 +2,7 @@ package com.atguigu.memento.theory;
 
 public class Originator {
 
-	private String state;//×´Ì¬ĞÅÏ¢
+	private String state;//çŠ¶æ€ä¿¡æ¯
 
 	public String getState() {
 		return state;
@@ -12,13 +12,13 @@ public class Originator {
 		this.state = state;
 	}
 	
-	//±àĞ´Ò»¸ö·½·¨£¬¿ÉÒÔ±£´æÒ»¸ö×´Ì¬¶ÔÏó Memento
-	//Òò´Ë±àĞ´Ò»¸ö·½·¨£¬·µ»Ø Memento
+	//ç¼–å†™ä¸€ä¸ªæ–¹æ³•ï¼Œå¯ä»¥ä¿å­˜ä¸€ä¸ªçŠ¶æ€å¯¹è±¡ Memento
+	//å› æ­¤ç¼–å†™ä¸€ä¸ªæ–¹æ³•ï¼Œè¿”å› Memento
 	public Memento saveStateMemento() {
 		return new Memento(state);
 	}
 	
-	//Í¨¹ı±¸ÍüÂ¼¶ÔÏó£¬»Ö¸´×´Ì¬
+	//é€šè¿‡å¤‡å¿˜å½•å¯¹è±¡ï¼Œæ¢å¤çŠ¶æ€
 	public void getStateFromMemento(Memento memento) {
 		state = memento.getState();
 	}

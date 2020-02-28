@@ -2,20 +2,20 @@ package com.atguigu.responsibilitychain;
 
 public abstract class Approver {
 
-	Approver approver;  //ÏÂÒ»¸ö´¦ÀíÕß
-	String name; // Ãû×Ö
+	Approver approver;  //ä¸‹ä¸€ä¸ªå¤„ç†è€…
+	String name; // åå­—
 	
 	public Approver(String name) {
 		// TODO Auto-generated constructor stub
 		this.name = name;
 	}
 
-	//ÏÂÒ»¸ö´¦ÀíÕß
+	//ä¸‹ä¸€ä¸ªå¤„ç†è€…
 	public void setApprover(Approver approver) {
 		this.approver = approver;
 	}
 	
-	//´¦ÀíÉóÅúÇëÇóµÄ·½·¨£¬µÃµ½Ò»¸öÇëÇó, ´¦ÀíÊÇ×ÓÀàÍê³É£¬Òò´Ë¸Ã·½·¨×ö³É³éÏó
+	//å¤„ç†å®¡æ‰¹è¯·æ±‚çš„æ–¹æ³•ï¼Œå¾—åˆ°ä¸€ä¸ªè¯·æ±‚, å¤„ç†æ˜¯å­ç±»å®Œæˆï¼Œå› æ­¤è¯¥æ–¹æ³•åšæˆæŠ½è±¡
 	public abstract void processRequest(PurchaseRequest purchaseRequest);
 	
 }

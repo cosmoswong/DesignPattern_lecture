@@ -5,45 +5,45 @@ import com.atguigu.factory.simplefactory.pizzastore.pizza.GreekPizza;
 import com.atguigu.factory.simplefactory.pizzastore.pizza.PepperPizza;
 import com.atguigu.factory.simplefactory.pizzastore.pizza.Pizza;
 
-//¼òµ¥¹¤³§Àà
+//ç®€å•å·¥å‚ç±»
 public class SimpleFactory {
 
-	//¸ü¼ÓorderType ·µ»Ø¶ÔÓ¦µÄPizza ¶ÔÏó
+	//æ›´åŠ orderType è¿”å›å¯¹åº”çš„Pizza å¯¹è±¡
 	public Pizza createPizza(String orderType) {
 
 		Pizza pizza = null;
 
-		System.out.println("Ê¹ÓÃ¼òµ¥¹¤³§Ä£Ê½");
+		System.out.println("ä½¿ç”¨ç®€å•å·¥å‚æ¨¡å¼");
 		if (orderType.equals("greek")) {
 			pizza = new GreekPizza();
-			pizza.setName(" Ï£À°ÅûÈø ");
+			pizza.setName(" å¸Œè…ŠæŠ«è¨ ");
 		} else if (orderType.equals("cheese")) {
 			pizza = new CheesePizza();
-			pizza.setName(" ÄÌÀÒÅûÈø ");
+			pizza.setName(" å¥¶é…ªæŠ«è¨ ");
 		} else if (orderType.equals("pepper")) {
 			pizza = new PepperPizza();
-			pizza.setName("ºú½·ÅûÈø");
+			pizza.setName("èƒ¡æ¤’æŠ«è¨");
 		}
 		
 		return pizza;
 	}
 	
-	//¼òµ¥¹¤³§Ä£Ê½ Ò²½Ğ ¾²Ì¬¹¤³§Ä£Ê½ 
+	//ç®€å•å·¥å‚æ¨¡å¼ ä¹Ÿå« é™æ€å·¥å‚æ¨¡å¼ 
 	
 	public static Pizza createPizza2(String orderType) {
 
 		Pizza pizza = null;
 
-		System.out.println("Ê¹ÓÃ¼òµ¥¹¤³§Ä£Ê½2");
+		System.out.println("ä½¿ç”¨ç®€å•å·¥å‚æ¨¡å¼2");
 		if (orderType.equals("greek")) {
 			pizza = new GreekPizza();
-			pizza.setName(" Ï£À°ÅûÈø ");
+			pizza.setName(" å¸Œè…ŠæŠ«è¨ ");
 		} else if (orderType.equals("cheese")) {
 			pizza = new CheesePizza();
-			pizza.setName(" ÄÌÀÒÅûÈø ");
+			pizza.setName(" å¥¶é…ªæŠ«è¨ ");
 		} else if (orderType.equals("pepper")) {
 			pizza = new PepperPizza();
-			pizza.setName("ºú½·ÅûÈø");
+			pizza.setName("èƒ¡æ¤’æŠ«è¨");
 		}
 		
 		return pizza;

@@ -3,7 +3,7 @@ package com.atguigu.interpreter;
 import java.util.HashMap;
 
 /**
- * ¼Ó·¨½âÊÍÆ÷
+ * åŠ æ³•è§£é‡Šå™¨
  * @author Administrator
  *
  */
@@ -13,12 +13,12 @@ public class AddExpression extends SymbolExpression  {
 		super(left, right);
 	}
 
-	//´¦ÀíÏà¼Ó
-	//var ÈÔÈ»ÊÇ {a=10,b=20}..
-	//Ò»»áÎÒÃÇdebug Ô´Âë,¾Íok
+	//å¤„ç†ç›¸åŠ 
+	//var ä»ç„¶æ˜¯ {a=10,b=20}..
+	//ä¸€ä¼šæˆ‘ä»¬debug æºç ,å°±ok
 	public int interpreter(HashMap<String, Integer> var) {
-		//super.left.interpreter(var) £º ·µ»Ø left ±í´ïÊ½¶ÔÓ¦µÄÖµ a = 10
-		//super.right.interpreter(var): ·µ»Øright ±í´ïÊ½¶ÔÓ¦Öµ b = 20
+		//super.left.interpreter(var) ï¼š è¿”å› left è¡¨è¾¾å¼å¯¹åº”çš„å€¼ a = 10
+		//super.right.interpreter(var): è¿”å›right è¡¨è¾¾å¼å¯¹åº”å€¼ b = 20
 		return super.left.interpreter(var) + super.right.interpreter(var);
 	}
 }

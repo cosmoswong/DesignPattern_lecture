@@ -1,12 +1,12 @@
 package com.atguigu.proxy.staticproxy;
 
-//´úÀí¶ÔÏó,¾²Ì¬´úÀí
+//å¨´ç‹…çµ¿é®å©„ï¿½ç”µî”Šé’–ï¿½,é—‚å Ÿç‘¦é”Ÿæˆ’æ¤’éî„„æ‚¶é”Ÿï¿½
 public class TeacherDaoProxy implements ITeacherDao{
 	
-	private ITeacherDao target; // Ä¿±ê¶ÔÏó£¬Í¨¹ı½Ó¿ÚÀ´¾ÛºÏ
+	private ITeacherDao target; // é–»â•Šå–—é–ï½‡ï¿½ç”µî”Šé’–å‹¯æ•å®€å‹¶æ‹·å§˜å´‡ç®–é–¹æ’å„±è¤°æ¶¢å¼¶éŠ‰ã„¤ç²µé–¸æ°¾æ‹·
 	
 	
-	//¹¹ÔìÆ÷
+	//é–ºå¬ªå«°é”Ÿç•Œå§´å¨…ï¿½
 	public TeacherDaoProxy(ITeacherDao target) {
 		this.target = target;
 	}
@@ -16,9 +16,9 @@ public class TeacherDaoProxy implements ITeacherDao{
 	@Override
 	public void teach() {
 		// TODO Auto-generated method stub
-		System.out.println("¿ªÊ¼´úÀí  Íê³ÉÄ³Ğ©²Ù×÷¡£¡£¡£¡£¡£ ");//·½·¨
+		System.out.println("ç€µî‡†æ‹·å©µî†¼îƒ„éî„„æ‚¶é”Ÿï¿½  éç‘°æœ¬é¨æ°¶å¼»é°î†æ˜‚é–¹å®ç§³ç¼æ—ˆå¦´éŒæ©ˆæ‹·éŒæ©ˆæ‹·éŒæ©ˆæ‹·éŒæ©ˆæ‹·é”Ÿï¿½ ");//é–ºå‚î‰çº­ï¿½
 		target.teach();
-		System.out.println("Ìá½»¡£¡£¡£¡£¡£");//·½·¨
+		System.out.println("é–¹ç»˜åŠ’å§˜ï¹‚å¦´éŒæ©ˆæ‹·éŒæ©ˆæ‹·éŒæ©ˆæ‹·éŒæ©ˆæ‹·é”Ÿï¿½");//é–ºå‚î‰çº­ï¿½
 	}
 
 }

@@ -2,28 +2,28 @@ package com.atguigu.strategy.improve;
 
 public abstract class Duck {
 
-	//ÊôĞÔ, ²ßÂÔ½Ó¿Ú
+	//å±æ€§, ç­–ç•¥æ¥å£
 	FlyBehavior flyBehavior;
-	//ÆäËüÊôĞÔ<->²ßÂÔ½Ó¿Ú
+	//å…¶å®ƒå±æ€§<->ç­–ç•¥æ¥å£
 	QuackBehavior quackBehavior;
 	
 	public Duck() {
 	
 	}
 
-	public abstract void display();//ÏÔÊ¾Ñ¼×ÓĞÅÏ¢
+	public abstract void display();//æ˜¾ç¤ºé¸­å­ä¿¡æ¯
 	
 	public void quack() {
-		System.out.println("Ñ¼×Ó¸Â¸Â½Ğ~~");
+		System.out.println("é¸­å­å˜å˜å«~~");
 	}
 	
 	public void swim() {
-		System.out.println("Ñ¼×Ó»áÓÎÓ¾~~");
+		System.out.println("é¸­å­ä¼šæ¸¸æ³³~~");
 	}
 	
 	public void fly() {
 		
-		//¸Ä½ø
+		//æ”¹è¿›
 		if(flyBehavior != null) {
 			flyBehavior.fly();
 		}

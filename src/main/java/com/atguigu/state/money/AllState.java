@@ -1,6 +1,6 @@
 package com.atguigu.state.money;
 
-//¸÷ÖÖ¾ßÌå×´Ì¬Àà
+//å„ç§å…·ä½“çŠ¶æ€ç±»
 class FeedBackState extends AbstractState {
 
 	@Override
@@ -62,8 +62,8 @@ class PublishState extends AbstractState {
 
 	@Override
 	public void acceptOrderEvent(Context context) {
-		//°Ñµ±Ç°×´Ì¬ÉèÖÃÎª  NotPayState¡£¡£¡£
-		//ÖÁÓÚÓ¦¸Ã±ä³ÉÄÄ¸ö×´Ì¬£¬ÓĞÁ÷³ÌÍ¼À´¾ö¶¨
+		//æŠŠå½“å‰çŠ¶æ€è®¾ç½®ä¸º  NotPayStateã€‚ã€‚ã€‚
+		//è‡³äºåº”è¯¥å˜æˆå“ªä¸ªçŠ¶æ€ï¼Œæœ‰æµç¨‹å›¾æ¥å†³å®š
 		context.setState(new NotPayState());
 	}
 

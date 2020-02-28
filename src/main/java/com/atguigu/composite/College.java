@@ -5,24 +5,24 @@ import java.util.List;
 
 public class College extends OrganizationComponent {
 
-	//List ÖĞ ´æ·ÅµÄDepartment
+	//List ä¸­ å­˜æ”¾çš„Department
 	List<OrganizationComponent> organizationComponents = new ArrayList<OrganizationComponent>();
 
-	// ¹¹ÔìÆ÷
+	// æ„é€ å™¨
 	public College(String name, String des) {
 		super(name, des);
 		// TODO Auto-generated constructor stub
 	}
 
-	// ÖØĞ´add
+	// é‡å†™add
 	@Override
 	protected void add(OrganizationComponent organizationComponent) {
 		// TODO Auto-generated method stub
-		//  ½«À´Êµ¼ÊÒµÎñÖĞ£¬Colleage µÄ add ºÍ  University add ²»Ò»¶¨ÍêÈ«Ò»Ñù
+		//  å°†æ¥å®é™…ä¸šåŠ¡ä¸­ï¼ŒColleage çš„ add å’Œ  University add ä¸ä¸€å®šå®Œå…¨ä¸€æ ·
 		organizationComponents.add(organizationComponent);
 	}
 
-	// ÖØĞ´remove
+	// é‡å†™remove
 	@Override
 	protected void remove(OrganizationComponent organizationComponent) {
 		// TODO Auto-generated method stub
@@ -41,12 +41,12 @@ public class College extends OrganizationComponent {
 		return super.getDes();
 	}
 
-	// print·½·¨£¬¾ÍÊÇÊä³öUniversity °üº¬µÄÑ§Ôº
+	// printæ–¹æ³•ï¼Œå°±æ˜¯è¾“å‡ºUniversity åŒ…å«çš„å­¦é™¢
 	@Override
 	protected void print() {
 		// TODO Auto-generated method stub
 		System.out.println("--------------" + getName() + "--------------");
-		//±éÀú organizationComponents 
+		//éå† organizationComponents 
 		for (OrganizationComponent organizationComponent : organizationComponents) {
 			organizationComponent.print();
 		}

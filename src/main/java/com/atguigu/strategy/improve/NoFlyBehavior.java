@@ -5,7 +5,7 @@ public class NoFlyBehavior implements FlyBehavior{
 	@Override
 	public void fly() {
 		// TODO Auto-generated method stub
-		System.out.println(" ²»»á·ÉÏè  ");
+		System.out.println(" ä¸ä¼šé£ç¿”  ");
 	}
 
 }

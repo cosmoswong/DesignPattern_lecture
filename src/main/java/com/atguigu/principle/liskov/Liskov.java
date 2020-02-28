@@ -10,7 +10,7 @@ public class Liskov {
 
 		System.out.println("-----------------------");
 		B b = new B();
-		System.out.println("11-3=" + b.func1(11, 3));//ÕâÀï±¾ÒâÊÇÇó³ö11-3
+		System.out.println("11-3=" + b.func1(11, 3));//è¿™é‡Œæœ¬æ„æ˜¯æ±‚å‡º11-3
 		System.out.println("1-8=" + b.func1(1, 8));// 1-8
 		System.out.println("11+3+9=" + b.func2(11, 3));
 		
@@ -20,18 +20,18 @@ public class Liskov {
 
 }
 
-// AÀà
+// Aç±»
 class A {
-	// ·µ»ØÁ½¸öÊıµÄ²î
+	// è¿”å›ä¸¤ä¸ªæ•°çš„å·®
 	public int func1(int num1, int num2) {
 		return num1 - num2;
 	}
 }
 
-// BÀà¼Ì³ĞÁËA
-// Ôö¼ÓÁËÒ»¸öĞÂ¹¦ÄÜ£ºÍê³ÉÁ½¸öÊıÏà¼Ó,È»ºóºÍ9ÇóºÍ
+// Bç±»ç»§æ‰¿äº†A
+// å¢åŠ äº†ä¸€ä¸ªæ–°åŠŸèƒ½ï¼šå®Œæˆä¸¤ä¸ªæ•°ç›¸åŠ ,ç„¶åå’Œ9æ±‚å’Œ
 class B extends A {
-	//ÕâÀï£¬ÖØĞ´ÁËAÀàµÄ·½·¨, ¿ÉÄÜÊÇÎŞÒâÊ¶
+	//è¿™é‡Œï¼Œé‡å†™äº†Aç±»çš„æ–¹æ³•, å¯èƒ½æ˜¯æ— æ„è¯†
 	public int func1(int a, int b) {
 		return a + b;
 	}

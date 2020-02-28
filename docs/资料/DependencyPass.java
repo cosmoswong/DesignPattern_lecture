@@ -9,27 +9,27 @@ public class DependencyPass {
 
 }
 
-// ·½Ê½1£º Í¨¹ı½Ó¿Ú´«µİÊµÏÖÒÀÀµ
-// ¿ª¹ØµÄ½Ó¿Ú
+// æ–¹å¼1ï¼š é€šè¿‡æ¥å£ä¼ é€’å®ç°ä¾èµ–
+// å¼€å…³çš„æ¥å£
 // interface IOpenAndClose {
-// public void open(ITV tv); //³éÏó·½·¨,½ÓÊÕ½Ó¿Ú
+// public void open(ITV tv); //æŠ½è±¡æ–¹æ³•,æ¥æ”¶æ¥å£
 // }
 //
-// interface ITV { //ITV½Ó¿Ú
+// interface ITV { //ITVæ¥å£
 // public void play();
 // }
-//// ÊµÏÖ½Ó¿Ú
+//// å®ç°æ¥å£
 // class OpenAndClose implements IOpenAndClose{
 // public void open(ITV tv){
 // tv.play();
 // }
 // }
 
-// ·½Ê½2: Í¨¹ı¹¹Ôì·½·¨ÒÀÀµ´«µİ
+// æ–¹å¼2: é€šè¿‡æ„é€ æ–¹æ³•ä¾èµ–ä¼ é€’
 // interface IOpenAndClose {
-// public void open(); //³éÏó·½·¨
+// public void open(); //æŠ½è±¡æ–¹æ³•
 // }
-// interface ITV { //ITV½Ó¿Ú
+// interface ITV { //ITVæ¥å£
 // public void play();
 // }
 // class OpenAndClose implements IOpenAndClose{
@@ -42,14 +42,14 @@ public class DependencyPass {
 // }
 // }
 
-// ·½Ê½3 , Í¨¹ısetter·½·¨´«µİ
+// æ–¹å¼3 , é€šè¿‡setteræ–¹æ³•ä¼ é€’
 interface IOpenAndClose {
-	public void open(); // ³éÏó·½·¨
+	public void open(); // æŠ½è±¡æ–¹æ³•
 
 	public void setTv(ITV tv);
 }
 
-interface ITV { // ITV½Ó¿Ú
+interface ITV { // ITVæ¥å£
 	public void play();
 }
 

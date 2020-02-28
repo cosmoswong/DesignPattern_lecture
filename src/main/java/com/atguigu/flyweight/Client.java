@@ -5,31 +5,31 @@ public class Client {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ´´½¨Ò»¸ö¹¤³§Àà
+		// åˆ›å»ºä¸€ä¸ªå·¥å‚ç±»
 		WebSiteFactory factory = new WebSiteFactory();
 
-		// ¿Í»§ÒªÒ»¸öÒÔĞÂÎÅĞÎÊ½·¢²¼µÄÍøÕ¾
-		WebSite webSite1 = factory.getWebSiteCategory("ĞÂÎÅ");
+		// å®¢æˆ·è¦ä¸€ä¸ªä»¥æ–°é—»å½¢å¼å‘å¸ƒçš„ç½‘ç«™
+		WebSite webSite1 = factory.getWebSiteCategory("æ–°é—»");
 
 		
 		webSite1.use(new User("tom"));
 
-		// ¿Í»§ÒªÒ»¸öÒÔ²©¿ÍĞÎÊ½·¢²¼µÄÍøÕ¾
-		WebSite webSite2 = factory.getWebSiteCategory("²©¿Í");
+		// å®¢æˆ·è¦ä¸€ä¸ªä»¥åšå®¢å½¢å¼å‘å¸ƒçš„ç½‘ç«™
+		WebSite webSite2 = factory.getWebSiteCategory("åšå®¢");
 
 		webSite2.use(new User("jack"));
 
-		// ¿Í»§ÒªÒ»¸öÒÔ²©¿ÍĞÎÊ½·¢²¼µÄÍøÕ¾
-		WebSite webSite3 = factory.getWebSiteCategory("²©¿Í");
+		// å®¢æˆ·è¦ä¸€ä¸ªä»¥åšå®¢å½¢å¼å‘å¸ƒçš„ç½‘ç«™
+		WebSite webSite3 = factory.getWebSiteCategory("åšå®¢");
 
 		webSite3.use(new User("smith"));
 
-		// ¿Í»§ÒªÒ»¸öÒÔ²©¿ÍĞÎÊ½·¢²¼µÄÍøÕ¾
-		WebSite webSite4 = factory.getWebSiteCategory("²©¿Í");
+		// å®¢æˆ·è¦ä¸€ä¸ªä»¥åšå®¢å½¢å¼å‘å¸ƒçš„ç½‘ç«™
+		WebSite webSite4 = factory.getWebSiteCategory("åšå®¢");
 
 		webSite4.use(new User("king"));
 		
-		System.out.println("ÍøÕ¾µÄ·ÖÀà¹²=" + factory.getWebSiteCount());
+		System.out.println("ç½‘ç«™çš„åˆ†ç±»å…±=" + factory.getWebSiteCount());
 	}
 
 }

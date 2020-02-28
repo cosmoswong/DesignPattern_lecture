@@ -932,7 +932,7 @@ public abstract class BaseTestCase extends TestCase {
             }
 
             if (!t.getMessage().matches(msgMatchesRegex)) {
-                fail("The error message «" + t.getMessage() + "» was expected to match «" + msgMatchesRegex + "».");
+                fail("The error message 芦" + t.getMessage() + "禄 was expected to match 芦" + msgMatchesRegex + "禄.");
             }
 
             return throwable.cast(t);

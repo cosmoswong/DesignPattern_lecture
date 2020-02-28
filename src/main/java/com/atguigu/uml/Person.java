@@ -1,6 +1,6 @@
 package com.atguigu.uml;
 
-public class Person{ //代码形式->类图
+public class Person{ //浠ｇ爜褰㈠紡->绫诲浘
 	private Integer id;
 	private String name;
 	public void setName(String name){

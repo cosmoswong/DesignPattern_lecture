@@ -2,14 +2,14 @@ package com.atguigu.command;
 
 public class RemoteController {
 
-	// ¿ª °´Å¥µÄÃüÁîÊı×é
+	// å¼€ æŒ‰é’®çš„å‘½ä»¤æ•°ç»„
 	Command[] onCommands;
 	Command[] offCommands;
 
-	// Ö´ĞĞ³·ÏúµÄÃüÁî
+	// æ‰§è¡Œæ’¤é”€çš„å‘½ä»¤
 	Command undoCommand;
 
-	// ¹¹ÔìÆ÷£¬Íê³É¶Ô°´Å¥³õÊ¼»¯
+	// æ„é€ å™¨ï¼Œå®Œæˆå¯¹æŒ‰é’®åˆå§‹åŒ–
 
 	public RemoteController() {
 
@@ -22,31 +22,31 @@ public class RemoteController {
 		}
 	}
 
-	// ¸øÎÒÃÇµÄ°´Å¥ÉèÖÃÄãĞèÒªµÄÃüÁî
+	// ç»™æˆ‘ä»¬çš„æŒ‰é’®è®¾ç½®ä½ éœ€è¦çš„å‘½ä»¤
 	public void setCommand(int no, Command onCommand, Command offCommand) {
 		onCommands[no] = onCommand;
 		offCommands[no] = offCommand;
 	}
 
-	// °´ÏÂ¿ª°´Å¥
+	// æŒ‰ä¸‹å¼€æŒ‰é’®
 	public void onButtonWasPushed(int no) { // no 0
-		// ÕÒµ½Äã°´ÏÂµÄ¿ªµÄ°´Å¥£¬ ²¢µ÷ÓÃ¶ÔÓ¦·½·¨
+		// æ‰¾åˆ°ä½ æŒ‰ä¸‹çš„å¼€çš„æŒ‰é’®ï¼Œ å¹¶è°ƒç”¨å¯¹åº”æ–¹æ³•
 		onCommands[no].execute();
-		// ¼ÇÂ¼Õâ´ÎµÄ²Ù×÷£¬ÓÃÓÚ³·Ïú
+		// è®°å½•è¿™æ¬¡çš„æ“ä½œï¼Œç”¨äºæ’¤é”€
 		undoCommand = onCommands[no];
 
 	}
 
-	// °´ÏÂ¿ª°´Å¥
+	// æŒ‰ä¸‹å¼€æŒ‰é’®
 	public void offButtonWasPushed(int no) { // no 0
-		// ÕÒµ½Äã°´ÏÂµÄ¹ØµÄ°´Å¥£¬ ²¢µ÷ÓÃ¶ÔÓ¦·½·¨
+		// æ‰¾åˆ°ä½ æŒ‰ä¸‹çš„å…³çš„æŒ‰é’®ï¼Œ å¹¶è°ƒç”¨å¯¹åº”æ–¹æ³•
 		offCommands[no].execute();
-		// ¼ÇÂ¼Õâ´ÎµÄ²Ù×÷£¬ÓÃÓÚ³·Ïú
+		// è®°å½•è¿™æ¬¡çš„æ“ä½œï¼Œç”¨äºæ’¤é”€
 		undoCommand = offCommands[no];
 
 	}
 	
-	// °´ÏÂ³·Ïú°´Å¥
+	// æŒ‰ä¸‹æ’¤é”€æŒ‰é’®
 	public void undoButtonWasPushed() {
 		undoCommand.undo();
 	}

@@ -9,7 +9,7 @@ public class Segregation1 {
 
 }
 
-//½Ó¿Ú
+//æ¥å£
 interface Interface1 {
 	void operation1();
 	void operation2();
@@ -20,43 +20,43 @@ interface Interface1 {
 
 class B implements Interface1 {
 	public void operation1() {
-		System.out.println("B ÊµÏÖÁË operation1");
+		System.out.println("B å®ç°äº† operation1");
 	}
 	
 	public void operation2() {
-		System.out.println("B ÊµÏÖÁË operation2");
+		System.out.println("B å®ç°äº† operation2");
 	}
 	public void operation3() {
-		System.out.println("B ÊµÏÖÁË operation3");
+		System.out.println("B å®ç°äº† operation3");
 	}
 	public void operation4() {
-		System.out.println("B ÊµÏÖÁË operation4");
+		System.out.println("B å®ç°äº† operation4");
 	}
 	public void operation5() {
-		System.out.println("B ÊµÏÖÁË operation5");
+		System.out.println("B å®ç°äº† operation5");
 	}
 }
 
 class D implements Interface1 {
 	public void operation1() {
-		System.out.println("D ÊµÏÖÁË operation1");
+		System.out.println("D å®ç°äº† operation1");
 	}
 	
 	public void operation2() {
-		System.out.println("D ÊµÏÖÁË operation2");
+		System.out.println("D å®ç°äº† operation2");
 	}
 	public void operation3() {
-		System.out.println("D ÊµÏÖÁË operation3");
+		System.out.println("D å®ç°äº† operation3");
 	}
 	public void operation4() {
-		System.out.println("D ÊµÏÖÁË operation4");
+		System.out.println("D å®ç°äº† operation4");
 	}
 	public void operation5() {
-		System.out.println("D ÊµÏÖÁË operation5");
+		System.out.println("D å®ç°äº† operation5");
 	}
 }
 
-class A { //A ÀàÍ¨¹ı½Ó¿ÚInterface1 ÒÀÀµ(Ê¹ÓÃ) BÀà£¬µ«ÊÇÖ»»áÓÃµ½1,2,3·½·¨
+class A { //A ç±»é€šè¿‡æ¥å£Interface1 ä¾èµ–(ä½¿ç”¨) Bç±»ï¼Œä½†æ˜¯åªä¼šç”¨åˆ°1,2,3æ–¹æ³•
 	public void depend1(Interface1 i) {
 		i.operation1();
 	}
@@ -68,7 +68,7 @@ class A { //A ÀàÍ¨¹ı½Ó¿ÚInterface1 ÒÀÀµ(Ê¹ÓÃ) BÀà£¬µ«ÊÇÖ»»áÓÃµ½1,2,3·½·¨
 	}
 }
   
-class C { //C ÀàÍ¨¹ı½Ó¿ÚInterface1 ÒÀÀµ(Ê¹ÓÃ) DÀà£¬µ«ÊÇÖ»»áÓÃµ½1,4,5·½·¨
+class C { //C ç±»é€šè¿‡æ¥å£Interface1 ä¾èµ–(ä½¿ç”¨) Dç±»ï¼Œä½†æ˜¯åªä¼šç”¨åˆ°1,4,5æ–¹æ³•
 	public void depend1(Interface1 i) {
 		i.operation1();
 	}

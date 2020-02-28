@@ -5,12 +5,12 @@ import java.util.Stack;
 
 public class Calculator {
 
-	// ¶¨Òå±í´ïÊ½
+	// å®šä¹‰è¡¨è¾¾å¼
 	private Expression expression;
 
-	// ¹¹Ôìº¯Êı´«²Î£¬²¢½âÎö
+	// æ„é€ å‡½æ•°ä¼ å‚ï¼Œå¹¶è§£æ
 	public Calculator(String expStr) {
-		// °²ÅÅÔËËãÏÈºóË³Ğò
+		// å®‰æ’è¿ç®—å…ˆåé¡ºåº
 		Stack<Expression> stack = new Stack<>();
 		char[] charArray = expStr.toCharArray();
 

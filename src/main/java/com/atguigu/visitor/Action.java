@@ -2,9 +2,9 @@ package com.atguigu.visitor;
 
 public abstract class Action {
 	
-	//µÃµ½ÄÐÐÔ µÄ²âÆÀ
+	//å¾—åˆ°ç”·æ€§ çš„æµ‹è¯„
 	public abstract void getManResult(Man man);
 	
-	//µÃµ½Å®µÄ ²âÆÀ
+	//å¾—åˆ°å¥³çš„ æµ‹è¯„
 	public abstract void getWomanResult(Woman woman);
 }

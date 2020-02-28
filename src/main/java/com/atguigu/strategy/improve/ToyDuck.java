@@ -11,17 +11,17 @@ public class ToyDuck extends Duck{
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println("Íæ¾ßÑ¼");
+		System.out.println("ç©å…·é¸­");
 	}
 
-	//ĞèÒªÖØĞ´¸¸ÀàµÄËùÓĞ·½·¨
+	//éœ€è¦é‡å†™çˆ¶ç±»çš„æ‰€æœ‰æ–¹æ³•
 	
 	public void quack() {
-		System.out.println("Íæ¾ßÑ¼²»ÄÜ½Ğ~~");
+		System.out.println("ç©å…·é¸­ä¸èƒ½å«~~");
 	}
 	
 	public void swim() {
-		System.out.println("Íæ¾ßÑ¼²»»áÓÎÓ¾~~");
+		System.out.println("ç©å…·é¸­ä¸ä¼šæ¸¸æ³³~~");
 	}
 	
 	

@@ -1,6 +1,6 @@
 package com.atguigu.observer.improve;
 
-//½Ó¿Ú, ÈÃWeatherData À´ÊµÏÖ 
+//æ¥å£, è®©WeatherData æ¥å®ç° 
 public interface Subject {
 	
 	public void registerObserver(Observer o);

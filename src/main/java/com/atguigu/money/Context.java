@@ -1,6 +1,6 @@
 package com.atguigu.money;
 
-//»·¾³ÉÏÏÂÎÄ
+//ç¯å¢ƒä¸Šä¸‹æ–‡
 public class Context extends AbstractState{
 	private State state;
 
@@ -62,7 +62,7 @@ public class Context extends AbstractState{
 
     @Override
     public String getCurrentState() {
-        System.out.println("µ±Ç°×´Ì¬ : " + state.getCurrentState());
+        System.out.println("å½“å‰çŠ¶æ€ : " + state.getCurrentState());
         return state.getCurrentState();
     }
 }
