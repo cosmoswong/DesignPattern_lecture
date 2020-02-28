@@ -8,21 +8,21 @@ import java.io.Serializable;
 
 public class DeepProtoType implements Serializable, Cloneable{
 	
-	public String name; //String 灞炴��
-	public DeepCloneableTarget deepCloneableTarget;// 寮曠敤绫诲瀷
+	public String name; //String 属性
+	public DeepCloneableTarget deepCloneableTarget;// 引用类型
 	public DeepProtoType() {
 		super();
 	}
 	
 	
-	//娣辨嫹璐� - 鏂瑰紡 1 浣跨敤clone 鏂规硶
+	//深拷贝 - 方式 1 使用clone 方法
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		
 		Object deep = null;
-		//杩欓噷瀹屾垚瀵瑰熀鏈暟鎹被鍨�(灞炴��)鍜孲tring鐨勫厠闅�
+		//这里完成对基本数据类型(属性)和String的克隆
 		deep = super.clone(); 
-		//瀵瑰紩鐢ㄧ被鍨嬬殑灞炴�э紝杩涜鍗曠嫭澶勭悊
+		//对引用类型的属性，进行单独处理
 		DeepProtoType deepProtoType = (DeepProtoType)deep;
 		deepProtoType.deepCloneableTarget  = (DeepCloneableTarget)deepCloneableTarget.clone();
 		
@@ -30,11 +30,11 @@ public class DeepProtoType implements Serializable, Cloneable{
 		return deepProtoType;
 	}
 	
-	//娣辨嫹璐� - 鏂瑰紡2 閫氳繃瀵硅薄鐨勫簭鍒楀寲瀹炵幇 (鎺ㄨ崘)
+	//深拷贝 - 方式2 通过对象的序列化实现 (推荐)
 	
 	public Object deepClone() {
 		
-		//鍒涘缓娴佸璞�
+		//创建流对象
 		ByteArrayOutputStream bos = null;
 		ObjectOutputStream oos = null;
 		ByteArrayInputStream bis = null;
@@ -42,12 +42,12 @@ public class DeepProtoType implements Serializable, Cloneable{
 		
 		try {
 			
-			//搴忓垪鍖�
+			//序列化
 			bos = new ByteArrayOutputStream();
 			oos = new ObjectOutputStream(bos);
-			oos.writeObject(this); //褰撳墠杩欎釜瀵硅薄浠ュ璞℃祦鐨勬柟寮忚緭鍑�
+			oos.writeObject(this); //当前这个对象以对象流的方式输出
 			
-			//鍙嶅簭鍒楀寲
+			//反序列化
 			bis = new ByteArrayInputStream(bos.toByteArray());
 			ois = new ObjectInputStream(bis);
 			DeepProtoType copyObj = (DeepProtoType)ois.readObject();
@@ -59,7 +59,7 @@ public class DeepProtoType implements Serializable, Cloneable{
 			e.printStackTrace();
 			return null;
 		} finally {
-			//鍏抽棴娴�
+			//关闭流
 			try {
 				bos.close();
 				oos.close();

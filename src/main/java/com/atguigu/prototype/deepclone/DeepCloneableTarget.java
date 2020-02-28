@@ -13,13 +13,13 @@ public class DeepCloneableTarget implements Serializable, Cloneable {
 
 	private String cloneClass;
 
-	//鏋勯�犲櫒
+	//构造器
 	public DeepCloneableTarget(String cloneName, String cloneClass) {
 		this.cloneName = cloneName;
 		this.cloneClass = cloneClass;
 	}
 
-	//鍥犱负璇ョ被鐨勫睘鎬э紝閮芥槸String , 鍥犳鎴戜滑杩欓噷浣跨敤榛樿鐨刢lone瀹屾垚鍗冲彲
+	//因为该类的属性，都是String , 因此我们这里使用默认的clone完成即可
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		return super.clone();

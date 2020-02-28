@@ -1,11 +1,11 @@
 package com.atguigu.adapter.classadapter;
 
-//琚�傞厤鐨勭被
+//被适配的类
 public class Voltage220V {
-	//杈撳嚭220V鐨勭數鍘�
+	//输出220V的电压
 	public int output220V() {
 		int src = 220;
-		System.out.println("鐢靛帇=" + src + "浼�");
+		System.out.println("电压=" + src + "伏");
 		return src;
 	}
 }

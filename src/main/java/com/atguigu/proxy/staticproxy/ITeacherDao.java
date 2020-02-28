@@ -1,8 +1,8 @@
 package com.atguigu.proxy.staticproxy;
 
 
-//閹恒儱褰�
+//接口
 public interface ITeacherDao {
 	
-	void teach(); // 閹哄牐顕抽惃鍕煙濞夛拷
+	void teach(); // 授课的方法
 }

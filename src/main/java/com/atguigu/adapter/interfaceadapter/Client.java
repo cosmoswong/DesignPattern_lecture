@@ -4,11 +4,11 @@ public class Client {
 	public static void main(String[] args) {
 		
 		AbsAdapter absAdapter = new AbsAdapter() {
-			//鍙渶瑕佸幓瑕嗙洊鎴戜滑 闇�瑕佷娇鐢� 鎺ュ彛鏂规硶
+			//只需要去覆盖我们 需要使用 接口方法
 			@Override
 			public void m1() {
 				// TODO Auto-generated method stub
-				System.out.println("浣跨敤浜唌1鐨勬柟娉�");
+				System.out.println("使用了m1的方法");
 			}
 		};
 		
