@@ -5,34 +5,34 @@ public class SingleResponsibility3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Vehicle2 vehicle2  = new Vehicle2();
-		vehicle2.run("Æû³µ");
-		vehicle2.runWater("ÂÖ´¬");
-		vehicle2.runAir("·É»ú");
+		vehicle2.run("æ±½è½¦");
+		vehicle2.runWater("è½®èˆ¹");
+		vehicle2.runAir("é£æœº");
 	}
 
 }
 
 
-//·½Ê½3µÄ·ÖÎö
-//1. ÕâÖÖĞŞ¸Ä·½·¨Ã»ÓĞ¶ÔÔ­À´µÄÀà×ö´óµÄĞŞ¸Ä£¬Ö»ÊÇÔö¼Ó·½·¨
-//2. ÕâÀïËäÈ»Ã»ÓĞÔÚÀàÕâ¸ö¼¶±ğÉÏ×ñÊØµ¥Ò»Ö°ÔğÔ­Ôò£¬µ«ÊÇÔÚ·½·¨¼¶±ğÉÏ£¬ÈÔÈ»ÊÇ×ñÊØµ¥Ò»Ö°Ôğ
+//æ–¹å¼3çš„åˆ†æ
+//1. è¿™ç§ä¿®æ”¹æ–¹æ³•æ²¡æœ‰å¯¹åŸæ¥çš„ç±»åšå¤§çš„ä¿®æ”¹ï¼Œåªæ˜¯å¢åŠ æ–¹æ³•
+//2. è¿™é‡Œè™½ç„¶æ²¡æœ‰åœ¨ç±»è¿™ä¸ªçº§åˆ«ä¸Šéµå®ˆå•ä¸€èŒè´£åŸåˆ™ï¼Œä½†æ˜¯åœ¨æ–¹æ³•çº§åˆ«ä¸Šï¼Œä»ç„¶æ˜¯éµå®ˆå•ä¸€èŒè´£
 class Vehicle2 {
 	public void run(String vehicle) {
-		//´¦Àí
+		//å¤„ç†
 		
-		System.out.println(vehicle + " ÔÚ¹«Â·ÉÏÔËĞĞ....");
+		System.out.println(vehicle + " åœ¨å…¬è·¯ä¸Šè¿è¡Œ....");
 		
 	}
 	
 	public void runAir(String vehicle) {
-		System.out.println(vehicle + " ÔÚÌì¿ÕÉÏÔËĞĞ....");
+		System.out.println(vehicle + " åœ¨å¤©ç©ºä¸Šè¿è¡Œ....");
 	}
 	
 	public void runWater(String vehicle) {
-		System.out.println(vehicle + " ÔÚË®ÖĞĞĞ....");
+		System.out.println(vehicle + " åœ¨æ°´ä¸­è¡Œ....");
 	}
 	
-	//·½·¨2.
+	//æ–¹æ³•2.
 	//..
 	//..
 	

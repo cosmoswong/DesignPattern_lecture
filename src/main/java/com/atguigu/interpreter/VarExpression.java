@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 
 /**
- * ±äÁ¿µÄ½âÊÍÆ÷
+ * å˜é‡çš„è§£é‡Šå™¨
  * @author Administrator
  *
  */
@@ -16,8 +16,8 @@ public class VarExpression extends Expression {
 		this.key = key;
 	}
 
-	// var ¾ÍÊÇ{a=10, b=20}
-	// interpreter ¸ù¾İ ±äÁ¿Ãû³Æ£¬·µ»Ø¶ÔÓ¦Öµ
+	// var å°±æ˜¯{a=10, b=20}
+	// interpreter æ ¹æ® å˜é‡åç§°ï¼Œè¿”å›å¯¹åº”å€¼
 	@Override
 	public int interpreter(HashMap<String, Integer> var) {
 		return var.get(this.key);

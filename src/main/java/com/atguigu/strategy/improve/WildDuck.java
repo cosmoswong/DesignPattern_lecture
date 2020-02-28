@@ -3,7 +3,7 @@ package com.atguigu.strategy.improve;
 public class WildDuck extends Duck {
 
 	
-	//¹¹ÔìÆ÷£¬´«ÈëFlyBehavor µÄ¶ÔÏó
+	//æ„é€ å™¨ï¼Œä¼ å…¥FlyBehavor çš„å¯¹è±¡
 	public  WildDuck() {
 		// TODO Auto-generated constructor stub
 		flyBehavior = new GoodFlyBehavior();
@@ -13,7 +13,7 @@ public class WildDuck extends Duck {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println(" ÕâÊÇÒ°Ñ¼ ");
+		System.out.println(" è¿™æ˜¯é‡é¸­ ");
 	}
 
 }

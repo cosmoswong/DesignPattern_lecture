@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Caretaker {
 	
-	//ÔÚList ¼¯ºÏÖĞ»áÓĞºÜ¶àµÄ±¸ÍüÂ¼¶ÔÏó
+	//åœ¨List é›†åˆä¸­ä¼šæœ‰å¾ˆå¤šçš„å¤‡å¿˜å½•å¯¹è±¡
 	private List<Memento> mementoList = new ArrayList<Memento>();
 	
 	public void add(Memento memento) {
 		mementoList.add(memento);
 	}
 	
-	//»ñÈ¡µ½µÚindex¸öOriginator µÄ ±¸ÍüÂ¼¶ÔÏó(¼´±£´æ×´Ì¬)
+	//è·å–åˆ°ç¬¬indexä¸ªOriginator çš„ å¤‡å¿˜å½•å¯¹è±¡(å³ä¿å­˜çŠ¶æ€)
 	public Memento get(int index) {
 		return mementoList.get(index);
 	}

@@ -6,18 +6,18 @@ public abstract class Duck {
 	
 	}
 
-	public abstract void display();//显示鸭子信息
+	public abstract void display();//鏄剧ず楦瓙淇℃伅
 	
 	public void quack() {
-		System.out.println("鸭子嘎嘎叫~~");
+		System.out.println("楦瓙鍢庡槑鍙珇~");
 	}
 	
 	public void swim() {
-		System.out.println("鸭子会游泳~~");
+		System.out.println("楦瓙浼氭父娉硚~");
 	}
 	
 	public void fly() {
-		System.out.println("鸭子会飞翔~~~");
+		System.out.println("楦瓙浼氶缈攡~~");
 	}
 	
 }

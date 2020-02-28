@@ -1,17 +1,17 @@
 package com.atguigu.observer;
 
 /**
- * ÏÔÊ¾µ±Ç°ÌìÆøÇé¿ö£¨¿ÉÒÔÀí½â³ÉÊÇÆøÏóÕ¾×Ô¼ºµÄÍøÕ¾£©
+ * æ˜¾ç¤ºå½“å‰å¤©æ°”æƒ…å†µï¼ˆå¯ä»¥ç†è§£æˆæ˜¯æ°”è±¡ç«™è‡ªå·±çš„ç½‘ç«™ï¼‰
  * @author Administrator
  *
  */
 public class CurrentConditions {
-	// ÎÂ¶È£¬ÆøÑ¹£¬Êª¶È
+	// æ¸©åº¦ï¼Œæ°”å‹ï¼Œæ¹¿åº¦
 	private float temperature;
 	private float pressure;
 	private float humidity;
 
-	//¸üĞÂ ÌìÆøÇé¿ö£¬ÊÇÓÉ WeatherData À´µ÷ÓÃ£¬ÎÒÊ¹ÓÃÍÆËÍÄ£Ê½
+	//æ›´æ–° å¤©æ°”æƒ…å†µï¼Œæ˜¯ç”± WeatherData æ¥è°ƒç”¨ï¼Œæˆ‘ä½¿ç”¨æ¨é€æ¨¡å¼
 	public void update(float temperature, float pressure, float humidity) {
 		this.temperature = temperature;
 		this.pressure = pressure;
@@ -19,7 +19,7 @@ public class CurrentConditions {
 		display();
 	}
 
-	//ÏÔÊ¾
+	//æ˜¾ç¤º
 	public void display() {
 		System.out.println("***Today mTemperature: " + temperature + "***");
 		System.out.println("***Today mPressure: " + pressure + "***");

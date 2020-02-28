@@ -1,15 +1,15 @@
 package com.atguigu.factory.simplefactory.pizzastore.order;
 
-//Ïàµ±ÓÚÒ»¸ö¿Í»§¶Ë£¬·¢³ö¶©¹º
+//ç›¸å½“äºä¸€ä¸ªå®¢æˆ·ç«¯ï¼Œå‘å‡ºè®¢è´­
 public class PizzaStore {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//new OrderPizza();
 		
-		//Ê¹ÓÃ¼òµ¥¹¤³§Ä£Ê½
+		//ä½¿ç”¨ç®€å•å·¥å‚æ¨¡å¼
 		//new OrderPizza(new SimpleFactory());
-		//System.out.println("~~ÍË³ö³ÌĞò~~");
+		//System.out.println("~~é€€å‡ºç¨‹åº~~");
 		
 		new OrderPizza2();
 	}

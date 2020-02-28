@@ -1,11 +1,11 @@
 package com.atguigu.adapter.classadapter;
 
-//±»ÊÊÅäµÄÀà
+//çšî‚¦ï¿½å‚å¤é¨å‹­è¢«
 public class Voltage220V {
-	//Êä³ö220VµÄµçÑ¹
+	//æˆæ’³åš­220Vé¨å‹­æ•¸é˜ï¿½
 	public int output220V() {
 		int src = 220;
-		System.out.println("µçÑ¹=" + src + "·ü");
+		System.out.println("é¢é›å¸‡=" + src + "æµ¼ï¿½");
 		return src;
 	}
 }

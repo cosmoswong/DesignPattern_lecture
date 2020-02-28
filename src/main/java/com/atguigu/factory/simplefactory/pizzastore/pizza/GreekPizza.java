@@ -5,7 +5,7 @@ public class GreekPizza extends Pizza {
 	@Override
 	public void prepare() {
 		// TODO Auto-generated method stub
-		System.out.println(" ¸øÏ£À°ÅûÈø ×¼±¸Ô­²ÄÁÏ ");
+		System.out.println(" ç»™å¸Œè…ŠæŠ«è¨ å‡†å¤‡åŸææ–™ ");
 	}
 
 }

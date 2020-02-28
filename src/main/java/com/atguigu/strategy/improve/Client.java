@@ -13,9 +13,9 @@ public class Client {
 		PekingDuck pekingDuck = new PekingDuck();
 		pekingDuck.fly();
 		
-		//¶¯Ì¬¸Ä±äÄ³¸ö¶ÔÏóµÄĞĞÎª, ±±¾©Ñ¼ ²»ÄÜ·É
+		//åŠ¨æ€æ”¹å˜æŸä¸ªå¯¹è±¡çš„è¡Œä¸º, åŒ—äº¬é¸­ ä¸èƒ½é£
 		pekingDuck.setFlyBehavior(new NoFlyBehavior());
-		System.out.println("±±¾©Ñ¼µÄÊµ¼Ê·ÉÏèÄÜÁ¦");
+		System.out.println("åŒ—äº¬é¸­çš„å®é™…é£ç¿”èƒ½åŠ›");
 		pekingDuck.fly();
 	}
 

@@ -1,36 +1,36 @@
 package com.atguigu.state;
 
 /**
- * ²»ÄÜ³é½±×´Ì¬
+ * ä¸èƒ½æŠ½å¥–çŠ¶æ€
  * @author Administrator
  *
  */
 public class NoRaffleState extends State {
 
-	 // ³õÊ¼»¯Ê±´«Èë»î¶¯ÒıÓÃ£¬¿Û³ı»ı·Öºó¸Ä±äÆä×´Ì¬
+	 // åˆå§‹åŒ–æ—¶ä¼ å…¥æ´»åŠ¨å¼•ç”¨ï¼Œæ‰£é™¤ç§¯åˆ†åæ”¹å˜å…¶çŠ¶æ€
     RaffleActivity activity;
 
     public NoRaffleState(RaffleActivity activity) {
         this.activity = activity;
     }
 
-    // µ±Ç°×´Ì¬¿ÉÒÔ¿Û»ı·Ö , ¿Û³ıºó£¬½«×´Ì¬ÉèÖÃ³É¿ÉÒÔ³é½±×´Ì¬
+    // å½“å‰çŠ¶æ€å¯ä»¥æ‰£ç§¯åˆ† , æ‰£é™¤åï¼Œå°†çŠ¶æ€è®¾ç½®æˆå¯ä»¥æŠ½å¥–çŠ¶æ€
     @Override
     public void deductMoney() {
-        System.out.println("¿Û³ı50»ı·Ö³É¹¦£¬Äú¿ÉÒÔ³é½±ÁË");
+        System.out.println("æ‰£é™¤50ç§¯åˆ†æˆåŠŸï¼Œæ‚¨å¯ä»¥æŠ½å¥–äº†");
         activity.setState(activity.getCanRaffleState());
     }
 
-    // µ±Ç°×´Ì¬²»ÄÜ³é½±
+    // å½“å‰çŠ¶æ€ä¸èƒ½æŠ½å¥–
     @Override
     public boolean raffle() {
-        System.out.println("¿ÛÁË»ı·Ö²ÅÄÜ³é½±à¸£¡");
+        System.out.println("æ‰£äº†ç§¯åˆ†æ‰èƒ½æŠ½å¥–å–”ï¼");
         return false;
     }
 
-    // µ±Ç°×´Ì¬²»ÄÜ·¢½±Æ·
+    // å½“å‰çŠ¶æ€ä¸èƒ½å‘å¥–å“
     @Override
     public void dispensePrize() {
-        System.out.println("²»ÄÜ·¢·Å½±Æ·");
+        System.out.println("ä¸èƒ½å‘æ”¾å¥–å“");
     }
 }

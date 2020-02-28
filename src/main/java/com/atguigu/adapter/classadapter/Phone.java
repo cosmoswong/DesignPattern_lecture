@@ -2,12 +2,12 @@ package com.atguigu.adapter.classadapter;
 
 public class Phone {
 
-	//³äµç
+	//éå‘¯æ•¸
 	public void charging(IVoltage5V iVoltage5V) {
 		if(iVoltage5V.output5V() == 5) {
-			System.out.println("µçÑ¹Îª5V, ¿ÉÒÔ³äµç~~");
+			System.out.println("é¢é›å¸‡æ¶“ï¿½5V, é™îˆ™äº’éå‘¯æ•¸~~");
 		} else if (iVoltage5V.output5V() > 5) {
-			System.out.println("µçÑ¹´óÓÚ5V, ²»ÄÜ³äµç~~");
+			System.out.println("é¢é›å¸‡æ¾¶Ñ‚ç°¬5V, æ¶“å¶ˆå…˜éå‘¯æ•¸~~");
 		}
 	}
 }

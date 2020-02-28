@@ -2,16 +2,16 @@ package com.atguigu.observer;
 
 public class Client {
 	public static void main(String[] args) {
-		//´´½¨½ÓÈë·½ currentConditions
+		//åˆ›å»ºæ¥å…¥æ–¹ currentConditions
 		CurrentConditions currentConditions = new CurrentConditions();
-		//´´½¨ WeatherData ²¢½« ½ÓÈë·½ currentConditions ´«µİµ½ WeatherDataÖĞ
+		//åˆ›å»º WeatherData å¹¶å°† æ¥å…¥æ–¹ currentConditions ä¼ é€’åˆ° WeatherDataä¸­
 		WeatherData weatherData = new WeatherData(currentConditions);
 		
-		//¸üĞÂÌìÆøÇé¿ö
+		//æ›´æ–°å¤©æ°”æƒ…å†µ
 		weatherData.setData(30, 150, 40);
 		
-		//ÌìÆøÇé¿ö±ä»¯
-		System.out.println("============ÌìÆøÇé¿ö±ä»¯=============");
+		//å¤©æ°”æƒ…å†µå˜åŒ–
+		System.out.println("============å¤©æ°”æƒ…å†µå˜åŒ–=============");
 		weatherData.setData(40, 160, 20);
 		
 

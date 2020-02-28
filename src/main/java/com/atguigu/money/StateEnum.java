@@ -1,28 +1,28 @@
 package com.atguigu.money;
 
 /**
- * ×´Ì¬Ã¶¾ÙÀà
+ * çŠ¶æ€æšä¸¾ç±»
  * @author Administrator
  *
  */
 public enum StateEnum {
 
-	 //¶©µ¥Éú³É
+	 //è®¢å•ç”Ÿæˆ
     GENERATE(1, "GENERATE"),
 
-    //ÒÑÉóºË
+    //å·²å®¡æ ¸
     REVIEWED(2, "REVIEWED"),
 
-    //ÒÑ·¢²¼
+    //å·²å‘å¸ƒ
     PUBLISHED(3, "PUBLISHED"),
 
-    //´ı¸¶¿î
+    //å¾…ä»˜æ¬¾
     NOT_PAY(4, "NOT_PAY"),
 
-    //ÒÑ¸¶¿î
+    //å·²ä»˜æ¬¾
     PAID(5, "PAID"),
 
-    //ÒÑÍê½á
+    //å·²å®Œç»“
     FEED_BACKED(6, "FEED_BACKED");
 
     private int key;

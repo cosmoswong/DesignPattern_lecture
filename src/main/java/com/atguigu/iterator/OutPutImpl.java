@@ -5,29 +5,29 @@ import java.util.List;
 
 public class OutPutImpl {
 	
-	//Ñ§Ôº¼¯ºÏ
+	//å­¦é™¢é›†åˆ
 	List<College> collegeList;
 
 	public OutPutImpl(List<College> collegeList) {
 		
 		this.collegeList = collegeList;
 	}
-	//±éÀúËùÓĞÑ§Ôº,È»ºóµ÷ÓÃprintDepartment Êä³ö¸÷¸öÑ§ÔºµÄÏµ
+	//éå†æ‰€æœ‰å­¦é™¢,ç„¶åè°ƒç”¨printDepartment è¾“å‡ºå„ä¸ªå­¦é™¢çš„ç³»
 	public void printCollege() {
 		
-		//´ÓcollegeList È¡³öËùÓĞÑ§Ôº, Java ÖĞµÄ List ÒÑ¾­ÊµÏÖIterator
+		//ä»collegeList å–å‡ºæ‰€æœ‰å­¦é™¢, Java ä¸­çš„ List å·²ç»å®ç°Iterator
 		Iterator<College> iterator = collegeList.iterator();
 		
 		while(iterator.hasNext()) {
-			//È¡³öÒ»¸öÑ§Ôº
+			//å–å‡ºä¸€ä¸ªå­¦é™¢
 			College college = iterator.next();
 			System.out.println("=== "+college.getName() +"=====" );
-			printDepartment(college.createIterator()); //µÃµ½¶ÔÓ¦µü´úÆ÷
+			printDepartment(college.createIterator()); //å¾—åˆ°å¯¹åº”è¿­ä»£å™¨
 		}
 	}
 	
 	
-	//Êä³ö Ñ§ÔºÊä³ö Ïµ
+	//è¾“å‡º å­¦é™¢è¾“å‡º ç³»
 	
 	public void printDepartment(Iterator iterator) {
 		while(iterator.hasNext()) {

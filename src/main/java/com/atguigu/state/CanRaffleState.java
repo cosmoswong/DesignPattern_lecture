@@ -3,7 +3,7 @@ package com.atguigu.state;
 import java.util.Random;
 
 /**
- * ¿ÉÒÔ³é½±µÄ×´Ì¬
+ * å¯ä»¥æŠ½å¥–çš„çŠ¶æ€
  * @author Administrator
  *
  */
@@ -15,34 +15,34 @@ public class CanRaffleState extends State {
         this.activity = activity;
     }
 
-    //ÒÑ¾­¿Û³ıÁË»ı·Ö£¬²»ÄÜÔÙ¿Û
+    //å·²ç»æ‰£é™¤äº†ç§¯åˆ†ï¼Œä¸èƒ½å†æ‰£
     @Override
     public void deductMoney() {
-        System.out.println("ÒÑ¾­¿ÛÈ¡¹ıÁË»ı·Ö");
+        System.out.println("å·²ç»æ‰£å–è¿‡äº†ç§¯åˆ†");
     }
 
-    //¿ÉÒÔ³é½±, ³éÍê½±ºó£¬¸ù¾İÊµ¼ÊÇé¿ö£¬¸Ä³ÉĞÂµÄ×´Ì¬
+    //å¯ä»¥æŠ½å¥–, æŠ½å®Œå¥–åï¼Œæ ¹æ®å®é™…æƒ…å†µï¼Œæ”¹æˆæ–°çš„çŠ¶æ€
     @Override
     public boolean raffle() {
-        System.out.println("ÕıÔÚ³é½±£¬ÇëÉÔµÈ£¡");
+        System.out.println("æ­£åœ¨æŠ½å¥–ï¼Œè¯·ç¨ç­‰ï¼");
         Random r = new Random();
         int num = r.nextInt(10);
-        // 10%ÖĞ½±»ú»á
+        // 10%ä¸­å¥–æœºä¼š
         if(num == 0){
-            // ¸Ä±ä»î¶¯×´Ì¬Îª·¢·Å½±Æ· context
+            // æ”¹å˜æ´»åŠ¨çŠ¶æ€ä¸ºå‘æ”¾å¥–å“ context
             activity.setState(activity.getDispenseState());
             return true;
         }else{
-            System.out.println("ºÜÒÅº¶Ã»ÓĞ³éÖĞ½±Æ·£¡");
-            // ¸Ä±ä×´Ì¬Îª²»ÄÜ³é½±
+            System.out.println("å¾ˆé—æ†¾æ²¡æœ‰æŠ½ä¸­å¥–å“ï¼");
+            // æ”¹å˜çŠ¶æ€ä¸ºä¸èƒ½æŠ½å¥–
             activity.setState(activity.getNoRafflleState());
             return false;
         }
     }
 
-    // ²»ÄÜ·¢·Å½±Æ·
+    // ä¸èƒ½å‘æ”¾å¥–å“
     @Override
     public void dispensePrize() {
-        System.out.println("Ã»ÖĞ½±£¬²»ÄÜ·¢·Å½±Æ·");
+        System.out.println("æ²¡ä¸­å¥–ï¼Œä¸èƒ½å‘æ”¾å¥–å“");
     }
 }

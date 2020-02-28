@@ -13,9 +13,9 @@ public class SingletonTest08 {
 	}
 }
 
-//Ê¹ÓÃÃ¶¾Ù£¬¿ÉÒÔÊµÏÖµ¥Àı, ÍÆ¼ö
+//ä½¿ç”¨æšä¸¾ï¼Œå¯ä»¥å®ç°å•ä¾‹, æ¨è
 enum Singleton {
-	INSTANCE; //ÊôĞÔ
+	INSTANCE; //å±æ€§
 	public void sayOK() {
 		System.out.println("ok~");
 	}

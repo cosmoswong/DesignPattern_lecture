@@ -3,22 +3,22 @@ package com.atguigu.visitor;
 import java.util.LinkedList;
 import java.util.List;
 
-//Êı¾İ½á¹¹£¬¹ÜÀíºÜ¶àÈË£¨Man , Woman£©
+//æ•°æ®ç»“æ„ï¼Œç®¡ç†å¾ˆå¤šäººï¼ˆMan , Womanï¼‰
 public class ObjectStructure {
 
-	//Î¬»¤ÁËÒ»¸ö¼¯ºÏ
+	//ç»´æŠ¤äº†ä¸€ä¸ªé›†åˆ
 	private List<Person> persons = new LinkedList<>();
 	
-	//Ôö¼Óµ½list
+	//å¢åŠ åˆ°list
 	public void attach(Person p) {
 		persons.add(p);
 	}
-	//ÒÆ³ı
+	//ç§»é™¤
 	public void detach(Person p) {
 		persons.remove(p);
 	}
 	
-	//ÏÔÊ¾²âÆÀÇé¿ö
+	//æ˜¾ç¤ºæµ‹è¯„æƒ…å†µ
 	public void display(Action action) {
 		for(Person p: persons) {
 			p.accept(action);

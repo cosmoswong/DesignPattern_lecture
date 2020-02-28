@@ -1,49 +1,49 @@
 package com.atguigu.money;
 
 /**
- * ×´Ì¬½Ó¿Ú
+ * çŠ¶æ€æ¥å£
  * @author Administrator
  *
  */
 public interface State {
 
 	/**
-     * µçÉó
+     * ç”µå®¡
      */
     void checkEvent(Context context);
 
     /**
-     * µçÉóÊ§°Ü
+     * ç”µå®¡å¤±è´¥
      */
     void checkFailEvent(Context context);
 
     /**
-     * ¶¨¼Û·¢²¼
+     * å®šä»·å‘å¸ƒ
      */
     void makePriceEvent(Context context);
 
     /**
-     * ½Óµ¥
+     * æ¥å•
      */
     void acceptOrderEvent(Context context);
 
     /**
-     * ÎŞÈË½Óµ¥Ê§Ğ§
+     * æ— äººæ¥å•å¤±æ•ˆ
      */
     void notPeopleAcceptEvent(Context context);
 
     /**
-     * ¸¶¿î
+     * ä»˜æ¬¾
      */
     void payOrderEvent(Context context);
 
     /**
-     * ½Óµ¥ÓĞÈËÖ§¸¶Ê§Ğ§
+     * æ¥å•æœ‰äººæ”¯ä»˜å¤±æ•ˆ
      */
     void orderFailureEvent(Context context);
 
     /**
-     * ·´À¡
+     * åé¦ˆ
      */
     void feedBackEvent(Context context);
 

@@ -5,20 +5,20 @@ public class GameRole {
 	private int vit;
 	private int def;
 	
-	//´´½¨Memento ,¼´¸ù¾İµ±Ç°µÄ×´Ì¬µÃµ½Memento
+	//åˆ›å»ºMemento ,å³æ ¹æ®å½“å‰çš„çŠ¶æ€å¾—åˆ°Memento
 	public Memento createMemento() {
 		return new Memento(vit, def);
 	}
 	
-	//´Ó±¸ÍüÂ¼¶ÔÏó£¬»Ö¸´GameRoleµÄ×´Ì¬
+	//ä»å¤‡å¿˜å½•å¯¹è±¡ï¼Œæ¢å¤GameRoleçš„çŠ¶æ€
 	public void recoverGameRoleFromMemento(Memento memento) {
 		this.vit = memento.getVit();
 		this.def = memento.getDef();
 	}
 	
-	//ÏÔÊ¾µ±Ç°ÓÎÏ·½ÇÉ«µÄ×´Ì¬
+	//æ˜¾ç¤ºå½“å‰æ¸¸æˆè§’è‰²çš„çŠ¶æ€
 	public void display() {
-		System.out.println("ÓÎÏ·½ÇÉ«µ±Ç°µÄ¹¥»÷Á¦£º" + this.vit + " ·ÀÓùÁ¦: " + this.def);
+		System.out.println("æ¸¸æˆè§’è‰²å½“å‰çš„æ”»å‡»åŠ›ï¼š" + this.vit + " é˜²å¾¡åŠ›: " + this.def);
 	}
 
 	public int getVit() {

@@ -5,7 +5,7 @@ public class LDCheesePizza extends Pizza{
 	@Override
 	public void prepare() {
 		// TODO Auto-generated method stub
-		setName("Â×¶ØµÄÄÌÀÒpizza");
-		System.out.println(" Â×¶ØµÄÄÌÀÒpizza ×¼±¸Ô­²ÄÁÏ");
+		setName("ä¼¦æ•¦çš„å¥¶é…ªpizza");
+		System.out.println(" ä¼¦æ•¦çš„å¥¶é…ªpizza å‡†å¤‡åŸææ–™");
 	}
 }

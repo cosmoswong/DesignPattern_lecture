@@ -9,25 +9,25 @@ import com.atguigu.factory.simplefactory.pizzastore.pizza.Pizza;
 
 public class OrderPizza {
 
-	// ¹¹ÔìÆ÷
+	// æ„é€ å™¨
 //	public OrderPizza() {
 //		Pizza pizza = null;
-//		String orderType; // ¶©¹ºÅûÈøµÄÀàĞÍ
+//		String orderType; // è®¢è´­æŠ«è¨çš„ç±»å‹
 //		do {
 //			orderType = getType();
 //			if (orderType.equals("greek")) {
 //				pizza = new GreekPizza();
-//				pizza.setName(" Ï£À°ÅûÈø ");
+//				pizza.setName(" å¸Œè…ŠæŠ«è¨ ");
 //			} else if (orderType.equals("cheese")) {
 //				pizza = new CheesePizza();
-//				pizza.setName(" ÄÌÀÒÅûÈø ");
+//				pizza.setName(" å¥¶é…ªæŠ«è¨ ");
 //			} else if (orderType.equals("pepper")) {
 //				pizza = new PepperPizza();
-//				pizza.setName("ºú½·ÅûÈø");
+//				pizza.setName("èƒ¡æ¤’æŠ«è¨");
 //			} else {
 //				break;
 //			}
-//			//Êä³öpizza ÖÆ×÷¹ı³Ì
+//			//è¾“å‡ºpizza åˆ¶ä½œè¿‡ç¨‹
 //			pizza.prepare();
 //			pizza.bake();
 //			pizza.cut();
@@ -36,42 +36,42 @@ public class OrderPizza {
 //		} while (true);
 //	}
 
-	//¶¨ÒåÒ»¸ö¼òµ¥¹¤³§¶ÔÏó
+	//å®šä¹‰ä¸€ä¸ªç®€å•å·¥å‚å¯¹è±¡
 	SimpleFactory simpleFactory;
 	Pizza pizza = null;
 	
-	//¹¹ÔìÆ÷
+	//æ„é€ å™¨
 	public OrderPizza(SimpleFactory simpleFactory) {
 		setFactory(simpleFactory);
 	}
 	
 	public void setFactory(SimpleFactory simpleFactory) {
-		String orderType = ""; //ÓÃ»§ÊäÈëµÄ
+		String orderType = ""; //ç”¨æˆ·è¾“å…¥çš„
 		
-		this.simpleFactory = simpleFactory; //ÉèÖÃ¼òµ¥¹¤³§¶ÔÏó
+		this.simpleFactory = simpleFactory; //è®¾ç½®ç®€å•å·¥å‚å¯¹è±¡
 		
 		do {
 			orderType = getType(); 
 			pizza = this.simpleFactory.createPizza(orderType);
 			
-			//Êä³öpizza
-			if(pizza != null) { //¶©¹º³É¹¦
+			//è¾“å‡ºpizza
+			if(pizza != null) { //è®¢è´­æˆåŠŸ
 				pizza.prepare();
 				pizza.bake();
 				pizza.cut();
 				pizza.box();
 			} else {
-				System.out.println(" ¶©¹ºÅûÈøÊ§°Ü ");
+				System.out.println(" è®¢è´­æŠ«è¨å¤±è´¥ ");
 				break;
 			}
 		}while(true);
 	}
 	
-	// Ğ´Ò»¸ö·½·¨£¬¿ÉÒÔ»ñÈ¡¿Í»§Ï£Íû¶©¹ºµÄÅûÈøÖÖÀà
+	// å†™ä¸€ä¸ªæ–¹æ³•ï¼Œå¯ä»¥è·å–å®¢æˆ·å¸Œæœ›è®¢è´­çš„æŠ«è¨ç§ç±»
 	private String getType() {
 		try {
 			BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
-			System.out.println("input pizza ÖÖÀà:");
+			System.out.println("input pizza ç§ç±»:");
 			String str = strin.readLine();
 			return str;
 		} catch (IOException e) {

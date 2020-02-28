@@ -7,8 +7,8 @@ public class Sheep implements Cloneable {
 	private String name;
 	private int age;
 	private String color;
-	private String address = "ÃÉ¹ÅÑò";
-	public Sheep friend; //ÊÇ¶ÔÏó, ¿ËÂ¡ÊÇ»áÈçºÎ´¦Àí
+	private String address = "é’‚æ¬å½œç¼‡ï¿½";
+	public Sheep friend; //é„îˆšî‡®ç’ï¿½, éå¬®æ®•é„îˆ™ç´°æ¿¡å‚™ç¶æ¾¶å‹­æ‚Š
 	public Sheep(String name, int age, String color) {
 		super();
 		this.name = name;
@@ -40,7 +40,7 @@ public class Sheep implements Cloneable {
 	public String toString() {
 		return "Sheep [name=" + name + ", age=" + age + ", color=" + color + ", address=" + address + "]";
 	}
-	//¿ËÂ¡¸ÃÊµÀı£¬Ê¹ÓÃÄ¬ÈÏµÄclone·½·¨À´Íê³É
+	//éå¬®æ®•ç’‡ãƒ¥ç–„æ¸šå¬¶ç´æµ£è·¨æ•¤æ¦›æ¨¿î…»é¨åˆ¢loneé‚è§„ç¡¶é‰ãƒ¥ç•¬é´ï¿½
 	@Override
 	protected Object clone()  {
 		

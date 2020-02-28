@@ -3,14 +3,14 @@ package com.atguigu.memento.game;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-//ÊØ»¤Õß¶ÔÏó, ±£´æÓÎÏ·½ÇÉ«µÄ×´Ì¬
+//å®ˆæŠ¤è€…å¯¹è±¡, ä¿å­˜æ¸¸æˆè§’è‰²çš„çŠ¶æ€
 public class Caretaker {
 
-	//Èç¹ûÖ»±£´æÒ»´Î×´Ì¬
+	//å¦‚æœåªä¿å­˜ä¸€æ¬¡çŠ¶æ€
 	private Memento  memento;
-	//¶ÔGameRole ±£´æ¶à´Î×´Ì¬
+	//å¯¹GameRole ä¿å­˜å¤šæ¬¡çŠ¶æ€
 	//private ArrayList<Memento> mementos;
-	//¶Ô¶à¸öÓÎÏ·½ÇÉ«±£´æ¶à¸ö×´Ì¬
+	//å¯¹å¤šä¸ªæ¸¸æˆè§’è‰²ä¿å­˜å¤šä¸ªçŠ¶æ€
 	//private HashMap<String, ArrayList<Memento>> rolesMementos;
 
 	public Memento getMemento() {

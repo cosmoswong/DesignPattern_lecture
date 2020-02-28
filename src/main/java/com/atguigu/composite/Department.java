@@ -2,7 +2,7 @@ package com.atguigu.composite;
 
 public class Department extends OrganizationComponent {
 
-	//没有集合
+	//娌℃湁闆嗗悎
 	
 	public Department(String name, String des) {
 		super(name, des);
@@ -10,7 +10,7 @@ public class Department extends OrganizationComponent {
 	}
 
 	
-	//add , remove 就不用写了，因为他是叶子节点
+	//add , remove 灏变笉鐢ㄥ啓浜嗭紝鍥犱负浠栨槸鍙跺瓙鑺傜偣
 	
 	@Override
 	public String getName() {

@@ -1,6 +1,6 @@
 package com.atguigu.mediator.smarthouse;
 
-//Í¬ÊÂ³éÏóÀà
+//åŒäº‹æŠ½è±¡ç±»
 public abstract class Colleague {
 	private Mediator mediator;
 	public String name;

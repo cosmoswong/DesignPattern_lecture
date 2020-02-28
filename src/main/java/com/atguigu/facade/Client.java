@@ -4,7 +4,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//ÕâÀïÖ±½Óµ÷ÓÃ¡£¡£ ºÜÂé·³
+		//è¿™é‡Œç›´æ¥è°ƒç”¨ã€‚ã€‚ å¾ˆéº»çƒ¦
 		HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
 		homeTheaterFacade.ready();
 		homeTheaterFacade.play();

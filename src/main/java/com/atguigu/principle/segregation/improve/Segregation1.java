@@ -4,15 +4,15 @@ public class Segregation1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// Ê¹ÓÃÒ»°Ñ
+		// ä½¿ç”¨ä¸€æŠŠ
 		A a = new A();
-		a.depend1(new B()); // AÀàÍ¨¹ı½Ó¿ÚÈ¥ÒÀÀµBÀà
+		a.depend1(new B()); // Aç±»é€šè¿‡æ¥å£å»ä¾èµ–Bç±»
 		a.depend2(new B());
 		a.depend3(new B());
 
 		C c = new C();
 
-		c.depend1(new D()); // CÀàÍ¨¹ı½Ó¿ÚÈ¥ÒÀÀµ(Ê¹ÓÃ)DÀà
+		c.depend1(new D()); // Cç±»é€šè¿‡æ¥å£å»ä¾èµ–(ä½¿ç”¨)Dç±»
 		c.depend4(new D());
 		c.depend5(new D());
 
@@ -20,20 +20,20 @@ public class Segregation1 {
 
 }
 
-// ½Ó¿Ú1
+// æ¥å£1
 interface Interface1 {
 	void operation1();
 
 }
 
-// ½Ó¿Ú2
+// æ¥å£2
 interface Interface2 {
 	void operation2();
 
 	void operation3();
 }
 
-// ½Ó¿Ú3
+// æ¥å£3
 interface Interface3 {
 	void operation4();
 
@@ -42,34 +42,34 @@ interface Interface3 {
 
 class B implements Interface1, Interface2 {
 	public void operation1() {
-		System.out.println("B ÊµÏÖÁË operation1");
+		System.out.println("B å®ç°äº† operation1");
 	}
 
 	public void operation2() {
-		System.out.println("B ÊµÏÖÁË operation2");
+		System.out.println("B å®ç°äº† operation2");
 	}
 
 	public void operation3() {
-		System.out.println("B ÊµÏÖÁË operation3");
+		System.out.println("B å®ç°äº† operation3");
 	}
 
 }
 
 class D implements Interface1, Interface3 {
 	public void operation1() {
-		System.out.println("D ÊµÏÖÁË operation1");
+		System.out.println("D å®ç°äº† operation1");
 	}
 
 	public void operation4() {
-		System.out.println("D ÊµÏÖÁË operation4");
+		System.out.println("D å®ç°äº† operation4");
 	}
 
 	public void operation5() {
-		System.out.println("D ÊµÏÖÁË operation5");
+		System.out.println("D å®ç°äº† operation5");
 	}
 }
 
-class A { // A ÀàÍ¨¹ı½Ó¿ÚInterface1,Interface2 ÒÀÀµ(Ê¹ÓÃ) BÀà£¬µ«ÊÇÖ»»áÓÃµ½1,2,3·½·¨
+class A { // A ç±»é€šè¿‡æ¥å£Interface1,Interface2 ä¾èµ–(ä½¿ç”¨) Bç±»ï¼Œä½†æ˜¯åªä¼šç”¨åˆ°1,2,3æ–¹æ³•
 	public void depend1(Interface1 i) {
 		i.operation1();
 	}
@@ -83,7 +83,7 @@ class A { // A ÀàÍ¨¹ı½Ó¿ÚInterface1,Interface2 ÒÀÀµ(Ê¹ÓÃ) BÀà£¬µ«ÊÇÖ»»áÓÃµ½1,2,3
 	}
 }
 
-class C { // C ÀàÍ¨¹ı½Ó¿ÚInterface1,Interface3 ÒÀÀµ(Ê¹ÓÃ) DÀà£¬µ«ÊÇÖ»»áÓÃµ½1,4,5·½·¨
+class C { // C ç±»é€šè¿‡æ¥å£Interface1,Interface3 ä¾èµ–(ä½¿ç”¨) Dç±»ï¼Œä½†æ˜¯åªä¼šç”¨åˆ°1,4,5æ–¹æ³•
 	public void depend1(Interface1 i) {
 		i.operation1();
 	}

@@ -1,20 +1,20 @@
 package com.atguigu.state;
 
 /**
- * 状态抽象类
+ * 鐘舵�佹娊璞＄被
  * @author Administrator
  *
  */
 public abstract class State {
 
 	
-	// 扣除积分 - 50
+	// 鎵ｉ櫎绉垎 - 50
     public abstract void deductMoney();
 
-    // 是否抽中奖品
+    // 鏄惁鎶戒腑濂栧搧
     public abstract boolean raffle();
 
-    // 发放奖品
+    // 鍙戞斁濂栧搧
     public abstract  void dispensePrize();
 
 }

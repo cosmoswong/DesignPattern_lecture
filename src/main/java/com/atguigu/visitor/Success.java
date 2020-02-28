@@ -5,13 +5,13 @@ public class Success extends Action {
 	@Override
 	public void getManResult(Man man) {
 		// TODO Auto-generated method stub
-		System.out.println(" 男人给的评价该歌手很成功 !");
+		System.out.println(" 鐢蜂汉缁欑殑璇勪环璇ユ瓕鎵嬪緢鎴愬姛 !");
 	}
 
 	@Override
 	public void getWomanResult(Woman woman) {
 		// TODO Auto-generated method stub
-		System.out.println(" 女人给的评价该歌手很成功 !");
+		System.out.println(" 濂充汉缁欑殑璇勪环璇ユ瓕鎵嬪緢鎴愬姛 !");
 	}
 
 }

@@ -2,9 +2,9 @@ package com.atguigu.memento.game;
 
 public class Memento {
 
-	//¹¥»÷Á¦
+	//æ”»å‡»åŠ›
 	private int vit;
-	//·ÀÓùÁ¦
+	//é˜²å¾¡åŠ›
 	private int def;
 	public Memento(int vit, int def) {
 		super();

@@ -8,7 +8,7 @@ public class SubExpression extends SymbolExpression {
 		super(left, right);
 	}
 
-	//Çó³öleft ºÍ right ±í´ïÊ½Ïà¼õºóµÄ½á¹û
+	//æ±‚å‡ºleft å’Œ right è¡¨è¾¾å¼ç›¸å‡åçš„ç»“æœ
 	public int interpreter(HashMap<String, Integer> var) {
 		return super.left.interpreter(var) - super.right.interpreter(var);
 	}

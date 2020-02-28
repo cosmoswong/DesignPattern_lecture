@@ -3,21 +3,21 @@ package com.atguigu.mediator.smarthouse;
 public class ClientTest {
 
 	public static void main(String[] args) {
-		//´´½¨Ò»¸öÖĞ½éÕß¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªä¸­ä»‹è€…å¯¹è±¡
 		Mediator mediator = new ConcreteMediator();
 		
-		//´´½¨Alarm ²¢ÇÒ¼ÓÈëµ½  ConcreteMediator ¶ÔÏóµÄHashMap
+		//åˆ›å»ºAlarm å¹¶ä¸”åŠ å…¥åˆ°  ConcreteMediator å¯¹è±¡çš„HashMap
 		Alarm alarm = new Alarm(mediator, "alarm");
 		
-		//´´½¨ÁËCoffeeMachine ¶ÔÏó£¬²¢  ÇÒ¼ÓÈëµ½  ConcreteMediator ¶ÔÏóµÄHashMap
+		//åˆ›å»ºäº†CoffeeMachine å¯¹è±¡ï¼Œå¹¶  ä¸”åŠ å…¥åˆ°  ConcreteMediator å¯¹è±¡çš„HashMap
 		CoffeeMachine coffeeMachine = new CoffeeMachine(mediator,
 				"coffeeMachine");
 		
-		//´´½¨ Curtains , ²¢  ÇÒ¼ÓÈëµ½  ConcreteMediator ¶ÔÏóµÄHashMap
+		//åˆ›å»º Curtains , å¹¶  ä¸”åŠ å…¥åˆ°  ConcreteMediator å¯¹è±¡çš„HashMap
 		Curtains curtains = new Curtains(mediator, "curtains");
 		TV tV = new TV(mediator, "TV");
 		
-		//ÈÃÄÖÖÓ·¢³öÏûÏ¢
+		//è®©é—¹é’Ÿå‘å‡ºæ¶ˆæ¯
 		alarm.SendAlarm(0);
 		coffeeMachine.FinishCoffee();
 		alarm.SendAlarm(1);

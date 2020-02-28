@@ -4,7 +4,7 @@ public class LDPepperPizza extends Pizza{
 	@Override
 	public void prepare() {
 		// TODO Auto-generated method stub
-		setName("Â×¶ØµÄºú½·pizza");
-		System.out.println(" Â×¶ØµÄºú½·pizza ×¼±¸Ô­²ÄÁÏ");
+		setName("ä¼¦æ•¦çš„èƒ¡æ¤’pizza");
+		System.out.println(" ä¼¦æ•¦çš„èƒ¡æ¤’pizza å‡†å¤‡åŸææ–™");
 	}
 }

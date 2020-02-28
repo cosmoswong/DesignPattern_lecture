@@ -11,27 +11,27 @@ public class Client {
 		Originator originator = new Originator();
 		Caretaker caretaker = new Caretaker();
 		
-		originator.setState(" ×´Ì¬#1 ¹¥»÷Á¦ 100 ");
+		originator.setState(" çŠ¶æ€#1 æ”»å‡»åŠ› 100 ");
 		
-		//±£´æÁËµ±Ç°µÄ×´Ì¬
+		//ä¿å­˜äº†å½“å‰çš„çŠ¶æ€
 		caretaker.add(originator.saveStateMemento());
 		
-		originator.setState(" ×´Ì¬#2 ¹¥»÷Á¦ 80 ");
+		originator.setState(" çŠ¶æ€#2 æ”»å‡»åŠ› 80 ");
 		
 		caretaker.add(originator.saveStateMemento());
 		
-		originator.setState(" ×´Ì¬#3 ¹¥»÷Á¦ 50 ");
+		originator.setState(" çŠ¶æ€#3 æ”»å‡»åŠ› 50 ");
 		caretaker.add(originator.saveStateMemento());
 		
 		
 		
-		System.out.println("µ±Ç°µÄ×´Ì¬ÊÇ =" + originator.getState());
+		System.out.println("å½“å‰çš„çŠ¶æ€æ˜¯ =" + originator.getState());
 		
-		//Ï£ÍûµÃµ½×´Ì¬ 1, ½« originator »Ö¸´µ½×´Ì¬1
+		//å¸Œæœ›å¾—åˆ°çŠ¶æ€ 1, å°† originator æ¢å¤åˆ°çŠ¶æ€1
 		
 		originator.getStateFromMemento(caretaker.get(0));
-		System.out.println("»Ö¸´µ½×´Ì¬1 , µ±Ç°µÄ×´Ì¬ÊÇ");
-		System.out.println("µ±Ç°µÄ×´Ì¬ÊÇ =" + originator.getState());
+		System.out.println("æ¢å¤åˆ°çŠ¶æ€1 , å½“å‰çš„çŠ¶æ€æ˜¯");
+		System.out.println("å½“å‰çš„çŠ¶æ€æ˜¯ =" + originator.getState());
 		
 		
 		

@@ -2,7 +2,7 @@ package com.atguigu.money;
 
 public abstract class AbstractState implements State {
 
-	protected static final RuntimeException EXCEPTION = new RuntimeException("²Ù×÷Á÷³Ì²»ÔÊĞí");
+	protected static final RuntimeException EXCEPTION = new RuntimeException("æ“ä½œæµç¨‹ä¸å…è®¸");
 
     @Override
     public void checkEvent(Context context) {

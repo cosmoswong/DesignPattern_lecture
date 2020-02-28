@@ -2,10 +2,10 @@ package com.atguigu.state.money;
 
 public abstract class AbstractState implements State {
 
-	protected static final RuntimeException EXCEPTION = new RuntimeException("²Ù×÷Á÷³Ì²»ÔÊĞí");
+	protected static final RuntimeException EXCEPTION = new RuntimeException("æ“ä½œæµç¨‹ä¸å…è®¸");
 
-	//³éÏóÀà£¬Ä¬ÈÏÊµÏÖÁË State ½Ó¿ÚµÄËùÓĞ·½·¨
-	//¸ÃÀàµÄËùÓĞ·½·¨£¬Æä×ÓÀà(¾ßÌåµÄ×´Ì¬Àà)£¬¿ÉÒÔÓĞÑ¡ÔñµÄ½øĞĞÖØĞ´
+	//æŠ½è±¡ç±»ï¼Œé»˜è®¤å®ç°äº† State æ¥å£çš„æ‰€æœ‰æ–¹æ³•
+	//è¯¥ç±»çš„æ‰€æœ‰æ–¹æ³•ï¼Œå…¶å­ç±»(å…·ä½“çš„çŠ¶æ€ç±»)ï¼Œå¯ä»¥æœ‰é€‰æ‹©çš„è¿›è¡Œé‡å†™
 	
     @Override
     public void checkEvent(Context context) {

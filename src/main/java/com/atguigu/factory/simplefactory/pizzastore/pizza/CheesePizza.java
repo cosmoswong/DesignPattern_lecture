@@ -5,7 +5,7 @@ public class CheesePizza extends Pizza {
 	@Override
 	public void prepare() {
 		// TODO Auto-generated method stub
-		System.out.println(" ¸øÖÆ×÷ÄÌÀÒÅûÈø ×¼±¸Ô­²ÄÁÏ ");
+		System.out.println(" ç»™åˆ¶ä½œå¥¶é…ªæŠ«è¨ å‡†å¤‡åŸææ–™ ");
 	}
 
 }

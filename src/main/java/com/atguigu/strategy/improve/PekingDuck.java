@@ -3,7 +3,7 @@ package com.atguigu.strategy.improve;
 public class PekingDuck extends Duck {
 
 	
-	//¼ÙÈç±±¾©Ñ¼¿ÉÒÔ·ÉÏè£¬µ«ÊÇ·ÉÏè¼¼ÊõÒ»°ã
+	//å‡å¦‚åŒ—äº¬é¸­å¯ä»¥é£ç¿”ï¼Œä½†æ˜¯é£ç¿”æŠ€æœ¯ä¸€èˆ¬
 	public PekingDuck() {
 		// TODO Auto-generated constructor stub
 		flyBehavior = new BadFlyBehavior();
@@ -13,7 +13,7 @@ public class PekingDuck extends Duck {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println("~~±±¾©Ñ¼~~~");
+		System.out.println("~~åŒ—äº¬é¸­~~~");
 	}
 	
 	

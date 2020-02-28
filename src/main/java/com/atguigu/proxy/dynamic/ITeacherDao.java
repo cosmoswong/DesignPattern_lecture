@@ -1,8 +1,8 @@
 package com.atguigu.proxy.dynamic;
 
-//接口
+//鎺ュ彛
 public interface ITeacherDao {
 
-	void teach(); // 授课方法
+	void teach(); // 鎺堣鏂规硶
 	void sayHello(String name);
 }

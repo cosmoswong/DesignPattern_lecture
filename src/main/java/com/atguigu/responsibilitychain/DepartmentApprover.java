@@ -12,7 +12,7 @@ public class DepartmentApprover extends Approver {
 	public void processRequest(PurchaseRequest purchaseRequest) {
 		// TODO Auto-generated method stub
 		if(purchaseRequest.getPrice() <= 5000) {
-			System.out.println(" ÇëÇó±àºÅ id= " + purchaseRequest.getId() + " ±» " + this.name + " ´¦Àí");
+			System.out.println(" è¯·æ±‚ç¼–å· id= " + purchaseRequest.getId() + " è¢« " + this.name + " å¤„ç†");
 		}else {
 			approver.processRequest(purchaseRequest);
 		}

@@ -1,12 +1,12 @@
 package com.atguigu.adapter.objectadapter;
 
-//ÊÊÅäÆ÷Àà
+//é€‚é…å™¨ç±»
 public class VoltageAdapter  implements IVoltage5V {
 
-	private Voltage220V voltage220V; // ¹ØÁª¹ØÏµ-¾ÛºÏ
+	private Voltage220V voltage220V; // å…³è”å…³ç³»-èšåˆ
 	
 	
-	//Í¨¹ı¹¹ÔìÆ÷£¬´«ÈëÒ»¸ö Voltage220V ÊµÀı
+	//é€šè¿‡æ„é€ å™¨ï¼Œä¼ å…¥ä¸€ä¸ª Voltage220V å®ä¾‹
 	public VoltageAdapter(Voltage220V voltage220v) {
 		
 		this.voltage220V = voltage220v;
@@ -19,10 +19,10 @@ public class VoltageAdapter  implements IVoltage5V {
 		
 		int dst = 0;
 		if(null != voltage220V) {
-			int src = voltage220V.output220V();//»ñÈ¡220V µçÑ¹
-			System.out.println("Ê¹ÓÃ¶ÔÏóÊÊÅäÆ÷£¬½øĞĞÊÊÅä~~");
+			int src = voltage220V.output220V();//è·å–220V ç”µå‹
+			System.out.println("ä½¿ç”¨å¯¹è±¡é€‚é…å™¨ï¼Œè¿›è¡Œé€‚é…~~");
 			dst = src / 44;
-			System.out.println("ÊÊÅäÍê³É£¬Êä³öµÄµçÑ¹Îª=" + dst);
+			System.out.println("é€‚é…å®Œæˆï¼Œè¾“å‡ºçš„ç”µå‹ä¸º=" + dst);
 		}
 		
 		return dst;

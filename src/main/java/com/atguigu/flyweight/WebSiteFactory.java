@@ -2,24 +2,24 @@ package com.atguigu.flyweight;
 
 import java.util.HashMap;
 
-// ÍøÕ¾¹¤³§Àà£¬¸ù¾İĞèÒª·µ»ØÑ¹Ò»¸öÍøÕ¾
+// ç½‘ç«™å·¥å‚ç±»ï¼Œæ ¹æ®éœ€è¦è¿”å›å‹ä¸€ä¸ªç½‘ç«™
 public class WebSiteFactory {
 
 	
-	//¼¯ºÏ£¬ ³äµ±³ØµÄ×÷ÓÃ
+	//é›†åˆï¼Œ å……å½“æ± çš„ä½œç”¨
 	private HashMap<String, ConcreteWebSite> pool = new HashMap<>();
 	
-	//¸ù¾İÍøÕ¾µÄÀàĞÍ£¬·µ»ØÒ»¸öÍøÕ¾, Èç¹ûÃ»ÓĞ¾Í´´½¨Ò»¸öÍøÕ¾£¬²¢·ÅÈëµ½³ØÖĞ,²¢·µ»Ø
+	//æ ¹æ®ç½‘ç«™çš„ç±»å‹ï¼Œè¿”å›ä¸€ä¸ªç½‘ç«™, å¦‚æœæ²¡æœ‰å°±åˆ›å»ºä¸€ä¸ªç½‘ç«™ï¼Œå¹¶æ”¾å…¥åˆ°æ± ä¸­,å¹¶è¿”å›
 	public WebSite getWebSiteCategory(String type) {
 		if(!pool.containsKey(type)) {
-			//¾Í´´½¨Ò»¸öÍøÕ¾£¬²¢·ÅÈëµ½³ØÖĞ
+			//å°±åˆ›å»ºä¸€ä¸ªç½‘ç«™ï¼Œå¹¶æ”¾å…¥åˆ°æ± ä¸­
 			pool.put(type, new ConcreteWebSite(type));
 		}
 		
 		return (WebSite)pool.get(type);
 	}
 	
-	//»ñÈ¡ÍøÕ¾·ÖÀàµÄ×ÜÊı (³ØÖĞÓĞ¶àÉÙ¸öÍøÕ¾ÀàĞÍ)
+	//è·å–ç½‘ç«™åˆ†ç±»çš„æ€»æ•° (æ± ä¸­æœ‰å¤šå°‘ä¸ªç½‘ç«™ç±»å‹)
 	public int getWebSiteCount() {
 		return pool.size();
 	}

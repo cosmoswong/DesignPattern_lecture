@@ -1,6 +1,6 @@
 package com.atguigu.iterator;
 
-//ϵ
+//系
 public class Department {
 
 	private String name;

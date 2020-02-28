@@ -5,26 +5,26 @@ import java.util.Stack;
 
 public class Calculator {
 
-	// ¶¨Òå±í´ïÊ½
+	// å®šä¹‰è¡¨è¾¾å¼
 	private Expression expression;
 
-	// ¹¹Ôìº¯Êı´«²Î£¬²¢½âÎö
+	// æ„é€ å‡½æ•°ä¼ å‚ï¼Œå¹¶è§£æ
 	public Calculator(String expStr) { // expStr = a+b
-		// °²ÅÅÔËËãÏÈºóË³Ğò
+		// å®‰æ’è¿ç®—å…ˆåé¡ºåº
 		Stack<Expression> stack = new Stack<>();
-		// ±í´ïÊ½²ğ·Ö³É×Ö·ûÊı×é 
+		// è¡¨è¾¾å¼æ‹†åˆ†æˆå­—ç¬¦æ•°ç»„ 
 		char[] charArray = expStr.toCharArray();// [a, +, b]
 
 		Expression left = null;
 		Expression right = null;
-		//±éÀúÎÒÃÇµÄ×Ö·ûÊı×é£¬ ¼´±éÀú  [a, +, b]
-		//Õë¶Ô²»Í¬µÄÇé¿ö£¬×ö´¦Àí
+		//éå†æˆ‘ä»¬çš„å­—ç¬¦æ•°ç»„ï¼Œ å³éå†  [a, +, b]
+		//é’ˆå¯¹ä¸åŒçš„æƒ…å†µï¼Œåšå¤„ç†
 		for (int i = 0; i < charArray.length; i++) {
 			switch (charArray[i]) {
 			case '+': //
-				left = stack.pop();// ´ÓstackÈ¡³öleft => "a"
-				right = new VarExpression(String.valueOf(charArray[++i]));// È¡³öÓÒ±í´ïÊ½ "b"
-				stack.push(new AddExpression(left, right));// È»ºó¸ù¾İµÃµ½left ºÍ right ¹¹½¨ AddExpresson¼ÓÈëstack
+				left = stack.pop();// ä»stackå–å‡ºleft => "a"
+				right = new VarExpression(String.valueOf(charArray[++i]));// å–å‡ºå³è¡¨è¾¾å¼ "b"
+				stack.push(new AddExpression(left, right));// ç„¶åæ ¹æ®å¾—åˆ°left å’Œ right æ„å»º AddExpressonåŠ å…¥stack
 				break;
 			case '-': // 
 				left = stack.pop();
@@ -32,18 +32,18 @@ public class Calculator {
 				stack.push(new SubExpression(left, right));
 				break;
 			default: 
-				//Èç¹ûÊÇÒ»¸ö Var ¾Í´´½¨Òª¸ø VarExpression ¶ÔÏó£¬²¢pushµ½ stack
+				//å¦‚æœæ˜¯ä¸€ä¸ª Var å°±åˆ›å»ºè¦ç»™ VarExpression å¯¹è±¡ï¼Œå¹¶pushåˆ° stack
 				stack.push(new VarExpression(String.valueOf(charArray[i])));
 				break;
 			}
 		}
-		//µ±±éÀúÍêÕû¸ö charArray Êı×éºó£¬stack ¾ÍµÃµ½×îºóExpression
+		//å½“éå†å®Œæ•´ä¸ª charArray æ•°ç»„åï¼Œstack å°±å¾—åˆ°æœ€åExpression
 		this.expression = stack.pop();
 	}
 
 	public int run(HashMap<String, Integer> var) {
-		//×îºó½«±í´ïÊ½a+bºÍ var = {a=10,b=20}
-		//È»ºó´«µİ¸øexpressionµÄinterpreter½øĞĞ½âÊÍÖ´ĞĞ
+		//æœ€åå°†è¡¨è¾¾å¼a+bå’Œ var = {a=10,b=20}
+		//ç„¶åä¼ é€’ç»™expressionçš„interpreterè¿›è¡Œè§£é‡Šæ‰§è¡Œ
 		return this.expression.interpreter(var);
 	}
 }

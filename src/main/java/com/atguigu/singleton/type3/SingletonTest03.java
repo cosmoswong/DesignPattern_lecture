@@ -4,7 +4,7 @@ package com.atguigu.singleton.type3;
 public class SingletonTest03 {
 
 	public static void main(String[] args) {
-		System.out.println("ÀÁººÊ½1 £¬ Ïß³Ì²»°²È«~");
+		System.out.println("æ‡’æ±‰å¼1 ï¼Œ çº¿ç¨‹ä¸å®‰å…¨~");
 		Singleton instance = Singleton.getInstance();
 		Singleton instance2 = Singleton.getInstance();
 		System.out.println(instance == instance2); // true
@@ -19,8 +19,8 @@ class Singleton {
 	
 	private Singleton() {}
 	
-	//Ìá¹©Ò»¸ö¾²Ì¬µÄ¹«ÓĞ·½·¨£¬µ±Ê¹ÓÃµ½¸Ã·½·¨Ê±£¬²ÅÈ¥´´½¨ instance
-	//¼´ÀÁººÊ½
+	//æä¾›ä¸€ä¸ªé™æ€çš„å…¬æœ‰æ–¹æ³•ï¼Œå½“ä½¿ç”¨åˆ°è¯¥æ–¹æ³•æ—¶ï¼Œæ‰å»åˆ›å»º instance
+	//å³æ‡’æ±‰å¼
 	public static Singleton getInstance() {
 		if(instance == null) {
 			instance = new Singleton();

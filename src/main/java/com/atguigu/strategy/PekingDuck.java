@@ -5,14 +5,14 @@ public class PekingDuck extends Duck {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println("~~±±¾©Ñ¼~~~");
+		System.out.println("~~åŒ—äº¬é¸­~~~");
 	}
 	
-	//ÒòÎª±±¾©Ñ¼²»ÄÜ·ÉÏè£¬Òò´ËĞèÒªÖØĞ´fly
+	//å› ä¸ºåŒ—äº¬é¸­ä¸èƒ½é£ç¿”ï¼Œå› æ­¤éœ€è¦é‡å†™fly
 	@Override
 	public void fly() {
 		// TODO Auto-generated method stub
-		System.out.println("±±¾©Ñ¼²»ÄÜ·ÉÏè");
+		System.out.println("åŒ—äº¬é¸­ä¸èƒ½é£ç¿”");
 	}
 
 }
